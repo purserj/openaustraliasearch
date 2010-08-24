@@ -20,6 +20,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		239491F8122478D600B31272 /* OAServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 239491F7122478D600B31272 /* OAServiceController.m */; };
+		239492651224819600B31272 /* libYAJLIPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2394925C1224819500B31272 /* libYAJLIPhone.a */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* openaustraliasearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* openaustraliasearchViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
@@ -46,6 +48,17 @@
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* openaustraliasearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openaustraliasearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		239491F6122478D600B31272 /* OAServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceController.h; sourceTree = "<group>"; };
+		239491F7122478D600B31272 /* OAServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceController.m; sourceTree = "<group>"; };
+		2394925C1224819500B31272 /* libYAJLIPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libYAJLIPhone.a; sourceTree = "<group>"; };
+		2394925D1224819500B31272 /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YAJL.h"; sourceTree = "<group>"; };
+		2394925E1224819600B31272 /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_common.h; sourceTree = "<group>"; };
+		2394925F1224819600B31272 /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_gen.h; sourceTree = "<group>"; };
+		239492601224819600B31272 /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yajl_parse.h; sourceTree = "<group>"; };
+		239492611224819600B31272 /* YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJL.h; sourceTree = "<group>"; };
+		239492621224819600B31272 /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLDocument.h; sourceTree = "<group>"; };
+		239492631224819600B31272 /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLGen.h; sourceTree = "<group>"; };
+		239492641224819600B31272 /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLParser.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* openaustraliasearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = openaustraliasearchViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -64,6 +77,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				239492651224819600B31272 /* libYAJLIPhone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +87,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2394925B1224819500B31272 /* yajl-0.2.19 */,
+				239491F41224785700B31272 /* Services */,
 				1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */,
 				1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* openaustraliasearchViewController.h */,
@@ -97,6 +113,31 @@
 				1D6058910D05DD3D006BFB54 /* openaustraliasearch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		239491F41224785700B31272 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				239491F6122478D600B31272 /* OAServiceController.h */,
+				239491F7122478D600B31272 /* OAServiceController.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2394925B1224819500B31272 /* yajl-0.2.19 */ = {
+			isa = PBXGroup;
+			children = (
+				2394925C1224819500B31272 /* libYAJLIPhone.a */,
+				2394925D1224819500B31272 /* NSObject+YAJL.h */,
+				2394925E1224819600B31272 /* yajl_common.h */,
+				2394925F1224819600B31272 /* yajl_gen.h */,
+				239492601224819600B31272 /* yajl_parse.h */,
+				239492611224819600B31272 /* YAJL.h */,
+				239492621224819600B31272 /* YAJLDocument.h */,
+				239492631224819600B31272 /* YAJLGen.h */,
+				239492641224819600B31272 /* YAJLParser.h */,
+			);
+			name = "yajl-0.2.19";
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -213,6 +254,7 @@
 				190627581223693D00CAD9D0 /* Search_Senate.m in Sources */,
 				1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */,
 				190627611223697200CAD9D0 /* RepObject.m in Sources */,
+				239491F8122478D600B31272 /* OAServiceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +271,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = openaustraliasearch_Prefix.pch;
 				INFOPLIST_FILE = "openaustraliasearch-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = openaustraliasearch;
 			};
 			name = Debug;
@@ -241,6 +291,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = openaustraliasearch_Prefix.pch;
 				INFOPLIST_FILE = "openaustraliasearch-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = openaustraliasearch;
 				VALIDATE_PRODUCT = YES;
 			};
