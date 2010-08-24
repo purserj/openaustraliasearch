@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190627351223669200CAD9D0 /* RepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627331223669200CAD9D0 /* RepView.m */; };
+		190627361223669200CAD9D0 /* RepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190627341223669200CAD9D0 /* RepView.xib */; };
+		1906274C1223691000CAD9D0 /* Search_HoR.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906274A1223691000CAD9D0 /* Search_HoR.m */; };
+		1906274D1223691000CAD9D0 /* Search_HoR.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906274B1223691000CAD9D0 /* Search_HoR.xib */; };
+		190627581223693D00CAD9D0 /* Search_Senate.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627561223693D00CAD9D0 /* Search_Senate.m */; };
+		190627591223693D00CAD9D0 /* Search_Senate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 190627571223693D00CAD9D0 /* Search_Senate.xib */; };
+		1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906275B1223695000CAD9D0 /* Search_Hansard.m */; };
+		1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906275C1223695000CAD9D0 /* Search_Hansard.xib */; };
+		190627611223697200CAD9D0 /* RepObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627601223697200CAD9D0 /* RepObject.m */; };
 		1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		190627321223669200CAD9D0 /* RepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepView.h; sourceTree = "<group>"; };
+		190627331223669200CAD9D0 /* RepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepView.m; sourceTree = "<group>"; };
+		190627341223669200CAD9D0 /* RepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RepView.xib; path = Classes/RepView.xib; sourceTree = "<group>"; };
+		190627491223691000CAD9D0 /* Search_HoR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search_HoR.h; sourceTree = "<group>"; };
+		1906274A1223691000CAD9D0 /* Search_HoR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search_HoR.m; sourceTree = "<group>"; };
+		1906274B1223691000CAD9D0 /* Search_HoR.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_HoR.xib; path = Classes/Search_HoR.xib; sourceTree = "<group>"; };
+		190627551223693D00CAD9D0 /* Search_Senate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search_Senate.h; sourceTree = "<group>"; };
+		190627561223693D00CAD9D0 /* Search_Senate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search_Senate.m; sourceTree = "<group>"; };
+		190627571223693D00CAD9D0 /* Search_Senate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Senate.xib; path = Classes/Search_Senate.xib; sourceTree = "<group>"; };
+		1906275A1223695000CAD9D0 /* Search_Hansard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search_Hansard.h; sourceTree = "<group>"; };
+		1906275B1223695000CAD9D0 /* Search_Hansard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search_Hansard.m; sourceTree = "<group>"; };
+		1906275C1223695000CAD9D0 /* Search_Hansard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Hansard.xib; path = Classes/Search_Hansard.xib; sourceTree = "<group>"; };
+		1906275F1223697200CAD9D0 /* RepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepObject.h; sourceTree = "<group>"; };
+		190627601223697200CAD9D0 /* RepObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepObject.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openaustraliasearchAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +77,16 @@
 				1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* openaustraliasearchViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* openaustraliasearchViewController.m */,
+				190627321223669200CAD9D0 /* RepView.h */,
+				190627331223669200CAD9D0 /* RepView.m */,
+				190627491223691000CAD9D0 /* Search_HoR.h */,
+				1906274A1223691000CAD9D0 /* Search_HoR.m */,
+				190627551223693D00CAD9D0 /* Search_Senate.h */,
+				190627561223693D00CAD9D0 /* Search_Senate.m */,
+				1906275A1223695000CAD9D0 /* Search_Hansard.h */,
+				1906275B1223695000CAD9D0 /* Search_Hansard.m */,
+				1906275F1223697200CAD9D0 /* RepObject.h */,
+				190627601223697200CAD9D0 /* RepObject.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +123,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1906275C1223695000CAD9D0 /* Search_Hansard.xib */,
+				190627571223693D00CAD9D0 /* Search_Senate.xib */,
+				1906274B1223691000CAD9D0 /* Search_HoR.xib */,
+				190627341223669200CAD9D0 /* RepView.xib */,
 				2899E5210DE3E06400AC0155 /* openaustraliasearchViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* openaustraliasearch-Info.plist */,
@@ -154,6 +191,10 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* openaustraliasearchViewController.xib in Resources */,
+				190627361223669200CAD9D0 /* RepView.xib in Resources */,
+				1906274D1223691000CAD9D0 /* Search_HoR.xib in Resources */,
+				190627591223693D00CAD9D0 /* Search_Senate.xib in Resources */,
+				1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +208,11 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* openaustraliasearchViewController.m in Sources */,
+				190627351223669200CAD9D0 /* RepView.m in Sources */,
+				1906274C1223691000CAD9D0 /* Search_HoR.m in Sources */,
+				190627581223693D00CAD9D0 /* Search_Senate.m in Sources */,
+				1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */,
+				190627611223697200CAD9D0 /* RepObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
