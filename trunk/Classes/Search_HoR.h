@@ -19,10 +19,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OAServiceController.h"
 
-
-@interface Search_HoR : UIViewController {
+@interface Search_HoR : UIViewController <UITextFieldDelegate>{
+	IBOutlet UITextField *textField;
 
 }
+
+-(IBAction)goHome:(id)sender;
+
+-(IBAction)getResults:(id)sender;
+
+@property (nonatomic, retain) IBOutlet UITextField *textField;
 
 @end
