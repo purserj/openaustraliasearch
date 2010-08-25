@@ -20,10 +20,18 @@
 
 
 #import <UIKit/UIKit.h>
+#import "Search_HoR.h"
+#import "Search_Senate.h"
+#import "Search_Hansard.h"
 
 @interface openaustraliasearchViewController : UIViewController {
-
+	IBOutlet Search_HoR *search_hor;
 }
+
+@property (nonatomic, retain) Search_HoR *search_hor;
+
+
+-(IBAction)switchView:(id)sender;
 
 @end
 

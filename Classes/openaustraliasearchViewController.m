@@ -20,8 +20,13 @@
 
 
 #import "openaustraliasearchViewController.h"
+#import "Search_HoR.h"
+#import "Search_Senate.h"
+#import "Search_Hansard.h"
+
 
 @implementation openaustraliasearchViewController
+@synthesize search_hor;
 
 
 
@@ -68,6 +73,28 @@
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
+}
+
+- (IBAction)switchView:(id)sender
+{
+	UIButton *pressedButton = (UIButton *)sender;
+	NSLog(@" The buttons title is %@.", pressedButton.currentTitle);
+	
+	if([pressedButton.currentTitle isEqualToString:@"Search House of Representatives"])
+	{
+		Search_HoR *searchhor = [[Search_HoR alloc] initWithNibName:nil bundle:nil];
+		[self presentModalViewController:searchhor animated:YES];
+	}
+	
+	else if ([pressedButton.currentTitle isEqualToString:@"Search Senate"]) {
+		Search_Senate *searchsen = [[Search_Senate alloc] initWithNibName:nil bundle:nil];
+		[self presentModalViewController:searchsen animated:YES];
+	}
+	
+	else if ([pressedButton.currentTitle isEqualToString:@"Search Hansard"]) {
+		Search_Hansard *searchhans = [[Search_Hansard alloc] initWithNibName:nil bundle:nil];
+		[self presentModalViewController:searchhans animated:YES];
+	}
 }
 
 

@@ -20,9 +20,11 @@
 
 
 #import "Search_HoR.h"
+#import "OAServiceController.h"
 
 
 @implementation Search_HoR
+@synthesize textField;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -60,6 +62,25 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (IBAction)goHome:(id)sender
+{
+		
+}
+
+-(IBAction)getResults:(id)sender
+{
+	NSInteger postcode = [textField.text intValue];
+	OAServiceController *controller = [[OAServiceController alloc] init];
+	[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+	if (theTextField == textField) {
+		[textField resignFirstResponder];
+	}
+	return YES;
 }
 
 
