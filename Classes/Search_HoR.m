@@ -20,7 +20,7 @@
 
 
 #import "Search_HoR.h"
-#import "OAServiceController.h"
+#import "RepObject.h"
 
 
 @implementation Search_HoR
@@ -73,6 +73,7 @@
 {
 	NSInteger postcode = [textField.text intValue];
 	OAServiceController *controller = [[OAServiceController alloc] init];
+	[controller setDelegate:self];
 	[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
 }
 
@@ -83,6 +84,15 @@
 	return YES;
 }
 
+
+#pragma mark -
+#pragma mark OAServiceController Delegate Methods
+
+- (void)serviceController:(id)controller foundRepresentatives:(NSArray *)representatives {
+	for (RepObject *representative in representatives) {
+		NSLog(@"%@, representative for %@", representative.fullName, representative.constituency);
+	}
+}
 
 - (void)dealloc {
     [super dealloc];

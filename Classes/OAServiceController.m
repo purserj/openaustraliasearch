@@ -21,6 +21,7 @@
 
 #import "OAServiceController.h"
 #import "NSObject+YAJL.h"
+#import "RepObject.h"
 
 @implementation OAServiceController
 
@@ -68,8 +69,20 @@
 		
 		// TODO: create an array of representative objects by getting the
 		//       relevant values out of the array of dictionaries.
+		NSMutableArray *representatives = [[NSMutableArray alloc] initWithCapacity:results.count];
 		
 		for (NSDictionary *representativeDict in results) {
+
+			RepObject *representative = [[RepObject alloc] init];
+			[representative setFirstName:[representativeDict valueForKey:@"first_name"]];
+			[representative setLastName:[representativeDict valueForKey:@"last_name"]];
+			[representative setFullName:[representativeDict valueForKey:@"full_name"]];
+			[representative setPartyName:[representativeDict valueForKey:@"party_name"]];
+			[representative setConstituency:[representativeDict valueForKey:@"constituency"]];			
+			
+			[representatives addObject:representative];
+			[representative release];
+			
 			for (NSString *key in [representativeDict allKeys]) {
 				NSLog(@"%@: %@", key, [representativeDict valueForKey:key]);
 			}
@@ -77,7 +90,9 @@
 		
 		
 		// TODO: call the delegate method with the array of representatives
-		
+		if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(serviceController:foundRepresentatives:)]) {
+			[self.delegate serviceController:self foundRepresentatives:representatives];
+		}
 		
 		[connection release];
 	}
