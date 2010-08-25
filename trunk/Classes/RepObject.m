@@ -23,4 +23,22 @@
 
 @implementation RepObject
 
+@synthesize personIdentifier;
+@synthesize memberIdentifier;
+@synthesize houseIdentifier;
+@synthesize firstName;
+@synthesize lastName;
+@synthesize fullName;
+@synthesize partyName;
+@synthesize constituency;
+
+- (void)dealloc {
+	[super dealloc];
+	[firstName release];
+	[lastName release];
+	[fullName release];
+	[partyName release];
+	[constituency release];
+}
+
 @end

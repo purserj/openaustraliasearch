@@ -23,7 +23,25 @@
 
 
 @interface RepObject : NSObject {
-
+	
+	int personIdentifier;
+	int memberIdentifier;
+	int houseIdentifier;	
+	NSString *firstName;
+	NSString *lastName;
+	NSString *fullName;
+	NSString *partyName;
+	NSString *constituency;
+	
 }
+
+@property (nonatomic) int personIdentifier;
+@property (nonatomic) int memberIdentifier;
+@property (nonatomic) int houseIdentifier;
+@property (nonatomic, retain) NSString *firstName;
+@property (nonatomic, retain) NSString *lastName;
+@property (nonatomic, retain) NSString *fullName;
+@property (nonatomic, retain) NSString *partyName;
+@property (nonatomic, retain) NSString *constituency;
 
 @end

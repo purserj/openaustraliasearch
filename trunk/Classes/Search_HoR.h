@@ -21,7 +21,7 @@
 #import <UIKit/UIKit.h>
 #import "OAServiceController.h"
 
-@interface Search_HoR : UIViewController <UITextFieldDelegate>{
+@interface Search_HoR : UIViewController <UITextFieldDelegate, OAServiceControllerDelegate>{
 	IBOutlet UITextField *textField;
 
 }
