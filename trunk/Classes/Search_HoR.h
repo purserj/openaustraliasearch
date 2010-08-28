@@ -26,6 +26,7 @@
 	IBOutlet UITextField *textField;
 	IBOutlet UITableView *resultTable;
 	NSMutableArray *results;
+	NSMutableArray *reps;
 
 }
 
