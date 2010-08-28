@@ -78,7 +78,8 @@
 			[representative setLastName:[representativeDict valueForKey:@"last_name"]];
 			[representative setFullName:[representativeDict valueForKey:@"full_name"]];
 			[representative setPartyName:[representativeDict valueForKey:@"party_name"]];
-			[representative setConstituency:[representativeDict valueForKey:@"constituency"]];			
+			[representative setConstituency:[representativeDict valueForKey:@"constituency"]];	
+			[representative setPersonIdentifier:[representativeDict valueForKey:@"person_id"]];
 			
 			[representatives addObject:representative];
 			[representative release];

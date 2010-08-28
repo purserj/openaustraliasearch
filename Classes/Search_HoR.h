@@ -21,8 +21,11 @@
 #import <UIKit/UIKit.h>
 #import "OAServiceController.h"
 
-@interface Search_HoR : UIViewController <UITextFieldDelegate, OAServiceControllerDelegate>{
+@interface Search_HoR : UIViewController <UITextFieldDelegate, OAServiceControllerDelegate,
+												UITableViewDelegate, UITableViewDataSource>{
 	IBOutlet UITextField *textField;
+	IBOutlet UITableView *tableView;
+	NSMutableArray *results;
 
 }
 
@@ -31,5 +34,7 @@
 -(IBAction)getResults:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UITextField *textField;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) NSArray *results;
 
 @end
