@@ -21,6 +21,7 @@
 
 #import "Search_HoR.h"
 #import "RepObject.h"
+#import "RepView.h"
 
 
 @implementation Search_HoR
@@ -94,6 +95,7 @@
 - (void)serviceController:(id)controller foundRepresentatives:(NSArray *)representatives {
 	
 	results = [NSMutableArray new];
+	reps = [NSMutableArray new];
 	for (RepObject *representative in representatives) {
 		NSLog(@"%@, representative for %@", representative.fullName, representative.constituency);
 		NSString *res = [NSString stringWithFormat:@"%@ - %@", representative.fullName, representative.constituency];
@@ -101,6 +103,7 @@
 		[results addObject:res];
 	}
 	NSLog(@"Results Count - %d", [results count]);
+	reps = representatives;
 	[results retain];
 }
 
@@ -136,7 +139,10 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	RepView *rview = [[RepView alloc] initWithNibName:nil bundle:nil];
+	rview.rep = [reps objectAtIndex:indexPath.row];
+	[self presentModalViewController:rview animated:YES];
 }
 
 - (void)dealloc {

@@ -20,10 +20,18 @@
 
 
 #import <UIKit/UIKit.h>
-
+#import "RepObject.h"
 
 @interface RepView : UIViewController {
-
+	RepObject *rep;
+	IBOutlet UILabel *house;
+	IBOutlet UILabel *party;
+	IBOutlet UILabel *date_elected;
 }
+
+@property (nonatomic, retain) RepObject *rep;
+@property (nonatomic, retain) IBOutlet UILabel *house;
+@property (nonatomic, retain) IBOutlet UILabel *party;
+@property (nonatomic, retain) IBOutlet UILabel *date_elected;
 
 @end
