@@ -16,6 +16,7 @@
 		1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906275B1223695000CAD9D0 /* Search_Hansard.m */; };
 		1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906275C1223695000CAD9D0 /* Search_Hansard.xib */; };
 		190627611223697200CAD9D0 /* RepObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627601223697200CAD9D0 /* RepObject.m */; };
+		19397A3A1228D1E60021CD71 /* untitled.m in Sources */ = {isa = PBXBuildFile; fileRef = 19397A391228D1E60021CD71 /* untitled.m */; };
 		1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -43,6 +44,8 @@
 		1906275C1223695000CAD9D0 /* Search_Hansard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Hansard.xib; path = Classes/Search_Hansard.xib; sourceTree = "<group>"; };
 		1906275F1223697200CAD9D0 /* RepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepObject.h; sourceTree = "<group>"; };
 		190627601223697200CAD9D0 /* RepObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepObject.m; sourceTree = "<group>"; };
+		19397A381228D1E60021CD71 /* untitled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = untitled.h; sourceTree = "<group>"; };
+		19397A391228D1E60021CD71 /* untitled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = untitled.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openaustraliasearchAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				1906275B1223695000CAD9D0 /* Search_Hansard.m */,
 				1906275F1223697200CAD9D0 /* RepObject.h */,
 				190627601223697200CAD9D0 /* RepObject.m */,
+				19397A381228D1E60021CD71 /* untitled.h */,
+				19397A391228D1E60021CD71 /* untitled.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */,
 				190627611223697200CAD9D0 /* RepObject.m in Sources */,
 				239491F8122478D600B31272 /* OAServiceController.m in Sources */,
+				19397A3A1228D1E60021CD71 /* untitled.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

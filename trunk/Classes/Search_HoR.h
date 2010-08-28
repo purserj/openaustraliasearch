@@ -24,7 +24,7 @@
 @interface Search_HoR : UIViewController <UITextFieldDelegate, OAServiceControllerDelegate,
 												UITableViewDelegate, UITableViewDataSource>{
 	IBOutlet UITextField *textField;
-	IBOutlet UITableView *tableView;
+	IBOutlet UITableView *resultTable;
 	NSMutableArray *results;
 
 }
@@ -34,7 +34,7 @@
 -(IBAction)getResults:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UITextField *textField;
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UITableView *resultTable;
 @property (nonatomic, retain) NSArray *results;
 
 @end

@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>19397A441228D2130021CD71</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>untitled.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>19397A451228D2130021CD71</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>untitled.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>19397A741228D9500021CD71</string>
+						<key>history</key>
+						<array>
+							<string>19397A3D1228D1FE0021CD71</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1333, 686}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 146 1333 727 0 0 1440 878 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -275,8 +316,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>33</integer>
-									<integer>30</integer>
+									<integer>22</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -330,7 +371,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>193979EA1228B0220021CD71</string>
+										<string>19397A731228D9500021CD71</string>
 										<key>history</key>
 										<array>
 											<string>196302201224B0F400109D61</string>
@@ -340,11 +381,14 @@
 											<string>196302A81224BF0400109D61</string>
 											<string>196303331224D53500109D61</string>
 											<string>196303341224D53500109D61</string>
-											<string>193979761228963F0021CD71</string>
 											<string>193979771228963F0021CD71</string>
 											<string>193979AD1228A1EA0021CD71</string>
 											<string>193979CA1228A5320021CD71</string>
-											<string>193979CB1228A5320021CD71</string>
+											<string>19397A1E1228D0CA0021CD71</string>
+											<string>19397A251228D10D0021CD71</string>
+											<string>19397A411228D2130021CD71</string>
+											<string>19397A4B1228D4790021CD71</string>
+											<string>193979BF1228A40D0021CD71</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -542,12 +586,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>193979EB1228B0220021CD71</string>
 		<string>19397963122893BB0021CD71</string>
 		<string>1939794E1228921D0021CD71</string>
 		<string>1939793512288F7B0021CD71</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>190626F6122353C800CAD9D0</string>
+		<string>19397A441228D2130021CD71</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch.xcodeproj</string>
 	</array>
@@ -573,7 +617,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>untitled.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -590,6 +634,8 @@
 							<string>507pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -642,7 +688,7 @@
 			<key>WindowToolGUID</key>
 			<string>190626F6122353C800CAD9D0</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
