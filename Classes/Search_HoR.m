@@ -25,7 +25,7 @@
 
 @implementation Search_HoR
 @synthesize textField;
-@synthesize tableView;
+@synthesize resultTable;
 @synthesize results;
 
 /*
@@ -41,10 +41,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	[[self tableView] insertRowsAtIndexPaths:(NSArray *)results withRowAnimation:UITableViewRowAnimationNone];
-	[tableView reloadData];
-	[tableView setNeedsDisplay];
-    [super viewDidLoad];
+	    [super viewDidLoad];
 }
 
 
@@ -80,6 +77,8 @@
 	OAServiceController *controller = [[OAServiceController alloc] init];
 	[controller setDelegate:self];
 	[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
+	NSLog(@"get results button pushed - %d", [results count]);
+	[resultTable reloadData];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
@@ -102,25 +101,42 @@
 		[results addObject:res];
 	}
 	NSLog(@"Results Count - %d", [results count]);
-	
+	[results retain];
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	NSLog(@"Table View Results - %@", [results count]);
-	return [results count] ; // every section has 5 rows
+    // Return the number of rows in the section.
+    //return [results count];
+	return [results count];
+	NSLog(@"Result count - %d", [results count]);
 }
 
+
+// Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	NSLog(@"cellForRowAtIndexPath called");
-	static NSString *CellIdentifier = @"Cell";
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-	if (cell == nil) { NSLog(@"new cell");
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-	}
-	NSString *cellValue = [results objectAtIndex:indexPath.row];
-	NSLog(@"hrmm %@", cellValue);
-	cell.text = cellValue;
-	return cell;
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    cell.text = [results objectAtIndex:indexPath.row]; 
+    // Configure the cell...
+    
+    return cell;
+}
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 - (void)dealloc {
