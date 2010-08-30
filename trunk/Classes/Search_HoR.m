@@ -82,6 +82,11 @@
 	[resultTable reloadData];
 }
 
+-(IBAction)popUpPicker:(id)sender
+{
+	
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
 	if (theTextField == textField) {
 		[textField resignFirstResponder];
@@ -92,7 +97,7 @@
 #pragma mark -
 #pragma mark OAServiceController Delegate Methods
 
-- (void)serviceController:(id)controller foundRepresentatives:(NSArray *)representatives {
+- (void)serviceController:(id)controller foundRepresentatives:(NSMutableArray *)representatives {
 	
 	results = [NSMutableArray new];
 	reps = [NSMutableArray new];
@@ -104,6 +109,7 @@
 	}
 	NSLog(@"Results Count - %d", [results count]);
 	reps = representatives;
+	[reps retain];
 	[results retain];
 }
 
@@ -139,9 +145,15 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	RepObject *repp = (RepObject *)[reps objectAtIndex:indexPath.row];
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	RepView *rview = [[RepView alloc] initWithNibName:nil bundle:nil];
-	rview.rep = [reps objectAtIndex:indexPath.row];
+	rview.rep = repp;
+	NSString *party = repp.partyName;
+	NSLog(@"Reps count check - %d", [reps count]);
+	NSLog(@"Party name - %@", party);
+	NSLog(@"Full Name - %@", repp.fullName);
+	NSLog(@"Index - %d", indexPath.row);
 	[self presentModalViewController:rview animated:YES];
 }
 

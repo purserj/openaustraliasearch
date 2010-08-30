@@ -24,14 +24,19 @@
 
 @interface RepView : UIViewController {
 	RepObject *rep;
+	IBOutlet UILabel *nameLabel;
+	IBOutlet UILabel *division;
 	IBOutlet UILabel *house;
 	IBOutlet UILabel *party;
 	IBOutlet UILabel *date_elected;
+	IBOutlet UIImageView *iview;
 }
 
 @property (nonatomic, retain) RepObject *rep;
+@property (nonatomic, retain) IBOutlet UILabel *nameLabel;
+@property (nonatomic, retain) IBOutlet UILabel *division;
 @property (nonatomic, retain) IBOutlet UILabel *house;
 @property (nonatomic, retain) IBOutlet UILabel *party;
 @property (nonatomic, retain) IBOutlet UILabel *date_elected;
-
+@property (nonatomic, retain) IBOutlet UIImageView *iview;
 @end
