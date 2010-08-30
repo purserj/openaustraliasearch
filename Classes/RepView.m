@@ -26,27 +26,50 @@
 
 @implementation RepView
 @synthesize rep;
+@synthesize nameLabel;
+@synthesize division;
 @synthesize house;
 @synthesize party;
 @synthesize date_elected;
+@synthesize iview;
 
-/*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
     }
     return self;
 }
-*/
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	party.text = @"%@", rep.partyName;
-	[party.text reload];
-	NSLog(@"%@",rep.partyName);
-	[self setNeedsDisplay];
+	//[rep setPartyName:@"Hello"];
+	nameLabel.text = (@"%@", rep.fullName);
+	division.text = (@"%@", rep.constituency);
+	party.text = (@"%@", rep.partyName);
+	if([rep.houseIdentifier isEqualToString:@"1"])
+	{
+		house.text = @"House of Representatives";
+	} else 
+	{
+		house.text = @"Senate";
+	}
+	[self downloadImage];
+	NSLog(@"%@", rep.houseIdentifier);
     [super viewDidLoad];
+}
+
+-(void)downloadImage {
+	NSString *myString1=[NSString stringWithFormat:@"http://www.openaustralia.org/images/mpsL/%@.jpg", rep.personIdentifier];
+	NSLog(myString1);
+	NSURL *url1=[NSURL  URLWithString:myString1];
+	UIImage *img1=[UIImage imageWithData:[NSData dataWithContentsOfURL:url1]];
+	[self performSelectorOnMainThread:@selector(downloadDone:) withObject:img1 waitUntilDone:NO];
+}
+
+-(void)downloadDone:(UIImage*)theImage {
+	
+	[iview setImage:theImage];
 }
 
 /*
