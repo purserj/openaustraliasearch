@@ -21,9 +21,6 @@
 #import "RepView.h"
 #import "RepObject.h"
 
-
-
-
 @implementation RepView
 @synthesize rep;
 @synthesize nameLabel;
@@ -32,6 +29,7 @@
 @synthesize party;
 @synthesize date_elected;
 @synthesize iview;
+@synthesize map;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -72,6 +70,15 @@
 	[iview setImage:theImage];
 }
 
+-(IBAction)closeView:(id)sender
+{
+	[self dismissModalViewControllerAnimated:YES];
+}
+
+-(IBAction)repHansard:(id)sender
+{
+	
+}
 /*
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
