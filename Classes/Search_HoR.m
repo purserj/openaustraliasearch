@@ -69,7 +69,7 @@
 
 - (IBAction)goHome:(id)sender
 {
-		
+	[self dismissModalViewControllerAnimated:YES];	
 }
 
 -(IBAction)getResults:(id)sender
