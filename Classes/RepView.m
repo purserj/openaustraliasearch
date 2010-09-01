@@ -20,6 +20,7 @@
 
 #import "RepView.h"
 #import "RepObject.h"
+#import "HansardView.h"
 
 @implementation RepView
 @synthesize rep;
@@ -77,6 +78,8 @@
 
 -(IBAction)repHansard:(id)sender
 {
+	HansardView *hview = [[HansardView alloc] initWithNibName:nil bundle:nil];
+	[self presentModalViewController:hview animated:YES];
 	
 }
 /*
