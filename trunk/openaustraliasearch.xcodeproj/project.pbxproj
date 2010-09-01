@@ -16,10 +16,10 @@
 		1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906275B1223695000CAD9D0 /* Search_Hansard.m */; };
 		1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906275C1223695000CAD9D0 /* Search_Hansard.xib */; };
 		190627611223697200CAD9D0 /* RepObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627601223697200CAD9D0 /* RepObject.m */; };
-		19397A3A1228D1E60021CD71 /* untitled.m in Sources */ = {isa = PBXBuildFile; fileRef = 19397A391228D1E60021CD71 /* untitled.m */; };
 		195C7DC6122CB4A200194292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C7DC5122CB4A200194292 /* MapKit.framework */; };
-		195C7DD9122CC40700194292 /* Hansard_View.m in Sources */ = {isa = PBXBuildFile; fileRef = 195C7DD7122CC40700194292 /* Hansard_View.m */; };
-		195C7DDA122CC40700194292 /* Hansard_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 195C7DD8122CC40700194292 /* Hansard_View.xib */; };
+		19629F69122DE01A005E45E2 /* HansardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19629F67122DE01A005E45E2 /* HansardView.m */; };
+		19629F6A122DE01A005E45E2 /* HansardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19629F68122DE01A005E45E2 /* HansardView.xib */; };
+		19629F81122DE3F3005E45E2 /* HansardServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19629F80122DE3F3005E45E2 /* HansardServiceController.m */; };
 		1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -47,12 +47,12 @@
 		1906275C1223695000CAD9D0 /* Search_Hansard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Hansard.xib; path = Classes/Search_Hansard.xib; sourceTree = "<group>"; };
 		1906275F1223697200CAD9D0 /* RepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepObject.h; sourceTree = "<group>"; };
 		190627601223697200CAD9D0 /* RepObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepObject.m; sourceTree = "<group>"; };
-		19397A381228D1E60021CD71 /* untitled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = untitled.h; sourceTree = "<group>"; };
-		19397A391228D1E60021CD71 /* untitled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = untitled.m; sourceTree = "<group>"; };
 		195C7DC5122CB4A200194292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		195C7DD6122CC40700194292 /* Hansard_View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hansard_View.h; sourceTree = "<group>"; };
-		195C7DD7122CC40700194292 /* Hansard_View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hansard_View.m; sourceTree = "<group>"; };
-		195C7DD8122CC40700194292 /* Hansard_View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Hansard_View.xib; path = Classes/Hansard_View.xib; sourceTree = "<group>"; };
+		19629F66122DE01A005E45E2 /* HansardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardView.h; sourceTree = "<group>"; };
+		19629F67122DE01A005E45E2 /* HansardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardView.m; sourceTree = "<group>"; };
+		19629F68122DE01A005E45E2 /* HansardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HansardView.xib; path = Classes/HansardView.xib; sourceTree = "<group>"; };
+		19629F7F122DE3F3005E45E2 /* HansardServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardServiceController.h; sourceTree = "<group>"; };
+		19629F80122DE3F3005E45E2 /* HansardServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardServiceController.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openaustraliasearchAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
@@ -114,10 +114,8 @@
 				1906275B1223695000CAD9D0 /* Search_Hansard.m */,
 				1906275F1223697200CAD9D0 /* RepObject.h */,
 				190627601223697200CAD9D0 /* RepObject.m */,
-				19397A381228D1E60021CD71 /* untitled.h */,
-				19397A391228D1E60021CD71 /* untitled.m */,
-				195C7DD6122CC40700194292 /* Hansard_View.h */,
-				195C7DD7122CC40700194292 /* Hansard_View.m */,
+				19629F66122DE01A005E45E2 /* HansardView.h */,
+				19629F67122DE01A005E45E2 /* HansardView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -135,6 +133,8 @@
 			children = (
 				239491F6122478D600B31272 /* OAServiceController.h */,
 				239491F7122478D600B31272 /* OAServiceController.m */,
+				19629F7F122DE3F3005E45E2 /* HansardServiceController.h */,
+				19629F80122DE3F3005E45E2 /* HansardServiceController.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -182,12 +182,12 @@
 			children = (
 				1906275C1223695000CAD9D0 /* Search_Hansard.xib */,
 				190627571223693D00CAD9D0 /* Search_Senate.xib */,
+				19629F68122DE01A005E45E2 /* HansardView.xib */,
 				1906274B1223691000CAD9D0 /* Search_HoR.xib */,
 				190627341223669200CAD9D0 /* RepView.xib */,
 				2899E5210DE3E06400AC0155 /* openaustraliasearchViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* openaustraliasearch-Info.plist */,
-				195C7DD8122CC40700194292 /* Hansard_View.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 				1906274D1223691000CAD9D0 /* Search_HoR.xib in Resources */,
 				190627591223693D00CAD9D0 /* Search_Senate.xib in Resources */,
 				1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */,
-				195C7DDA122CC40700194292 /* Hansard_View.xib in Resources */,
+				19629F6A122DE01A005E45E2 /* HansardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +273,8 @@
 				1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */,
 				190627611223697200CAD9D0 /* RepObject.m in Sources */,
 				239491F8122478D600B31272 /* OAServiceController.m in Sources */,
-				19397A3A1228D1E60021CD71 /* untitled.m in Sources */,
-				195C7DD9122CC40700194292 /* Hansard_View.m in Sources */,
+				19629F69122DE01A005E45E2 /* HansardView.m in Sources */,
+				19629F81122DE3F3005E45E2 /* HansardServiceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
