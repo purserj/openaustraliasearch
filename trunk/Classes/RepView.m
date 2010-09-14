@@ -79,6 +79,9 @@
 -(IBAction)repHansard:(id)sender
 {
 	HansardView *hview = [[HansardView alloc] initWithNibName:nil bundle:nil];
+	hview.houseType = @"representatives";
+	hview.person = rep.personIdentifier;
+	
 	[self presentModalViewController:hview animated:YES];
 	
 }
