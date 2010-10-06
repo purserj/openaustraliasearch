@@ -1,9 +1,9 @@
 //
-//  openaustraliasearchViewController.h
+//  HansardObject.h
 //  openaustraliasearch
 //
-//    Created by James Purser on 24/08/10.
-//  Copyright 2010 James Purser
+//  Created by James Purser on 6/10/10.
+//  Copyright 2010 James Purser. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -19,22 +19,18 @@
 //
 
 
-#import <UIKit/UIKit.h>
-#import "Search_HoR.h"
-#import "Search_Senate.h"
-#import "Search_Hansard.h"
+#import <Foundation/Foundation.h>
 
-@interface openaustraliasearchViewController : UIViewController {
-	IBOutlet Search_HoR *search_hor;
-	IBOutlet UIImageView *image;
+
+@interface HansardObject : NSObject {
+	NSString *parent;
+	NSString *body;
+	NSString *date;
+	NSString *link;
 }
 
-@property (nonatomic, retain) Search_HoR *search_hor;
-
-
--(IBAction)switchView:(id)sender;
-
-@property (nonatomic, retain) IBOutlet UIImageView *image;
-
+@property (nonatomic,retain) NSString *parent;
+@property (nonatomic,retain) NSString *body;
+@property (nonatomic,retain) NSString *date;
+@property (nonatomic,retain) NSString *link;
 @end
-

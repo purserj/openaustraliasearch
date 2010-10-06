@@ -20,18 +20,24 @@
 
 
 #import <UIKit/UIKit.h>
+#import "HansardServiceController.h"
+#import "HansardObject.h"
 
 
-@interface HansardView : UIViewController {
-	IBOutlet UITableView *resultsTable;
+@interface HansardView : UIViewController <HansardServiceControllerDelegate, UITableViewDelegate, UITableViewDataSource>{
 	
-	NSMutableArray *results;
+	IBOutlet NSMutableArray *results;
 	NSString *person;
 	NSString *houseType;
+	IBOutlet UITableView *resultTable;
+	NSMutableArray *hansObjs;
 }
 
 -(IBAction)closeView:(id)sender;
 
 @property (nonatomic, retain) NSString *person;
 @property (nonatomic, retain) NSString *houseType;
+@property (nonatomic, retain) IBOutlet UITableView *resultTable;
+@property (nonatomic, retain) IBOutlet NSMutableArray *results;
+@property (nonatomic, retain) NSMutableArray *hansObjs;
 @end

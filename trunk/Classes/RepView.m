@@ -46,6 +46,7 @@
 	nameLabel.text = (@"%@", rep.fullName);
 	division.text = (@"%@", rep.constituency);
 	party.text = (@"%@", rep.partyName);
+	NSLog(@"House type: %@", rep.houseIdentifier);
 	if([rep.houseIdentifier isEqualToString:@"1"])
 	{
 		house.text = @"House of Representatives";
@@ -79,7 +80,11 @@
 -(IBAction)repHansard:(id)sender
 {
 	HansardView *hview = [[HansardView alloc] initWithNibName:nil bundle:nil];
-	hview.houseType = @"representatives";
+	if([rep.houseIdentifier isEqualToString:@"1"]){
+		hview.houseType = @"representatives";
+	} else {
+		hview.houseType = @"senate";
+	}
 	hview.person = rep.personIdentifier;
 	
 	[self presentModalViewController:hview animated:YES];

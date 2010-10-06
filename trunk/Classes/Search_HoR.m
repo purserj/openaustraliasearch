@@ -28,6 +28,9 @@
 @synthesize textField;
 @synthesize resultTable;
 @synthesize results;
+@synthesize searchTypePicker;
+@synthesize stypes;
+@synthesize stype;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -42,6 +45,11 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	stypes = [[NSArray arrayWithObjects:
+			   @"PostCode",
+			   @"Date",
+			   @"Party",
+			   @"Name", nil] retain];
 	    [super viewDidLoad];
 }
 
@@ -74,12 +82,24 @@
 
 -(IBAction)getResults:(id)sender
 {
-	NSInteger postcode = [textField.text intValue];
+	
 	OAServiceController *controller = [[OAServiceController alloc] init];
 	[controller setDelegate:self];
-	[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
+	if([stype isEqualToString:@"PostCode"]){
+		NSInteger postcode = [textField.text intValue];
+		[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
+	} else if([stype isEqualToString:@"Date"]){
+		NSString *dateStr = [textField text];
+		[controller searchForRepresentativesWithPostcode:nil date:dateStr party:nil search:nil];
+	} else if([stype isEqualToString:@"Party"]){
+		NSString *partyStr = [textField text];
+		[controller searchForRepresentativesWithPostcode:nil date:nil party:partyStr search:nil];
+	} else if([stype isEqualToString:@"Name"]){
+		NSString *nameStr = [textField text];
+		[controller searchForRepresentativesWithPostcode:nil date:nil party:nil search:nameStr];
+	}
+	NSLog(@"%@", results);
 	NSLog(@"get results button pushed - %d", [results count]);
-	[resultTable reloadData];
 }
 
 -(IBAction)popUpPicker:(id)sender
@@ -111,6 +131,7 @@
 	reps = representatives;
 	[reps retain];
 	[results retain];
+		[[self resultTable] reloadData];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -155,6 +176,34 @@
 	NSLog(@"Full Name - %@", repp.fullName);
 	NSLog(@"Index - %d", indexPath.row);
 	[self presentModalViewController:rview animated:YES];
+}
+
+-(IBAction)selectSearchType:(id)sender{
+	[searchTypePicker setHidden:NO];
+	NSLog(@"Change State Button is pressed");
+}
+
+// statePicker setup functions
+- (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component {
+	
+	return [stypes count];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
+	
+	return 1;
+}
+
+- (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+	
+	return [stypes objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+	
+	NSLog(@"Selected Color: %@. Index of selected color: %i", [stypes objectAtIndex:row], row);
+	stype = [stypes objectAtIndex:row];
+	[searchTypePicker setHidden:YES];
 }
 
 - (void)dealloc {

@@ -16,10 +16,17 @@
 		1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906275B1223695000CAD9D0 /* Search_Hansard.m */; };
 		1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906275C1223695000CAD9D0 /* Search_Hansard.xib */; };
 		190627611223697200CAD9D0 /* RepObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627601223697200CAD9D0 /* RepObject.m */; };
+		193CD85D125BDF5A002484D1 /* HansardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 193CD85C125BDF5A002484D1 /* HansardObject.m */; };
+		193CD9C9125C3417002484D1 /* oa.png in Resources */ = {isa = PBXBuildFile; fileRef = 193CD9C8125C3417002484D1 /* oa.png */; };
+		19543478125198F900C89862 /* SenateServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19543477125198F900C89862 /* SenateServiceController.m */; };
 		195C7DC6122CB4A200194292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C7DC5122CB4A200194292 /* MapKit.framework */; };
 		19629F69122DE01A005E45E2 /* HansardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19629F67122DE01A005E45E2 /* HansardView.m */; };
 		19629F6A122DE01A005E45E2 /* HansardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19629F68122DE01A005E45E2 /* HansardView.xib */; };
 		19629F81122DE3F3005E45E2 /* HansardServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19629F80122DE3F3005E45E2 /* HansardServiceController.m */; };
+		1970957E1252B8B000EA055B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1970957D1252B8B000EA055B /* CoreData.framework */; };
+		197095BE1252BCE700EA055B /* openaustralia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */; };
+		197095C31252D2CF00EA055B /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197095C11252D2CF00EA055B /* WebView.m */; };
+		197095C41252D2CF00EA055B /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197095C21252D2CF00EA055B /* WebView.xib */; };
 		1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -47,12 +54,22 @@
 		1906275C1223695000CAD9D0 /* Search_Hansard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Hansard.xib; path = Classes/Search_Hansard.xib; sourceTree = "<group>"; };
 		1906275F1223697200CAD9D0 /* RepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepObject.h; sourceTree = "<group>"; };
 		190627601223697200CAD9D0 /* RepObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepObject.m; sourceTree = "<group>"; };
+		193CD85B125BDF5A002484D1 /* HansardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardObject.h; sourceTree = "<group>"; };
+		193CD85C125BDF5A002484D1 /* HansardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardObject.m; sourceTree = "<group>"; };
+		193CD9C8125C3417002484D1 /* oa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oa.png; sourceTree = "<group>"; };
+		19543476125198F900C89862 /* SenateServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenateServiceController.h; sourceTree = "<group>"; };
+		19543477125198F900C89862 /* SenateServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenateServiceController.m; sourceTree = "<group>"; };
 		195C7DC5122CB4A200194292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		19629F66122DE01A005E45E2 /* HansardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardView.h; sourceTree = "<group>"; };
 		19629F67122DE01A005E45E2 /* HansardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardView.m; sourceTree = "<group>"; };
 		19629F68122DE01A005E45E2 /* HansardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HansardView.xib; path = Classes/HansardView.xib; sourceTree = "<group>"; };
 		19629F7F122DE3F3005E45E2 /* HansardServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardServiceController.h; sourceTree = "<group>"; };
 		19629F80122DE3F3005E45E2 /* HansardServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardServiceController.m; sourceTree = "<group>"; };
+		1970957D1252B8B000EA055B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = openaustralia.xcdatamodel; sourceTree = "<group>"; };
+		197095C01252D2CF00EA055B /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
+		197095C11252D2CF00EA055B /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
+		197095C21252D2CF00EA055B /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WebView.xib; path = Classes/WebView.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openaustraliasearchAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +106,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				239492651224819600B31272 /* libYAJLIPhone.a in Frameworks */,
 				195C7DC6122CB4A200194292 /* MapKit.framework in Frameworks */,
+				1970957E1252B8B000EA055B /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +134,11 @@
 				190627601223697200CAD9D0 /* RepObject.m */,
 				19629F66122DE01A005E45E2 /* HansardView.h */,
 				19629F67122DE01A005E45E2 /* HansardView.m */,
+				197095C01252D2CF00EA055B /* WebView.h */,
+				197095C11252D2CF00EA055B /* WebView.m */,
+				193CD85B125BDF5A002484D1 /* HansardObject.h */,
+				193CD85C125BDF5A002484D1 /* HansardObject.m */,
+				193CD9C8125C3417002484D1 /* oa.png */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -135,6 +158,8 @@
 				239491F7122478D600B31272 /* OAServiceController.m */,
 				19629F7F122DE3F3005E45E2 /* HansardServiceController.h */,
 				19629F80122DE3F3005E45E2 /* HansardServiceController.m */,
+				19543476125198F900C89862 /* SenateServiceController.h */,
+				19543477125198F900C89862 /* SenateServiceController.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -164,6 +189,8 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				195C7DC5122CB4A200194292 /* MapKit.framework */,
+				1970957D1252B8B000EA055B /* CoreData.framework */,
+				197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -182,6 +209,7 @@
 			children = (
 				1906275C1223695000CAD9D0 /* Search_Hansard.xib */,
 				190627571223693D00CAD9D0 /* Search_Senate.xib */,
+				197095C21252D2CF00EA055B /* WebView.xib */,
 				19629F68122DE01A005E45E2 /* HansardView.xib */,
 				1906274B1223691000CAD9D0 /* Search_HoR.xib */,
 				190627341223669200CAD9D0 /* RepView.xib */,
@@ -232,7 +260,14 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "openaustraliasearch" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,6 +289,8 @@
 				190627591223693D00CAD9D0 /* Search_Senate.xib in Resources */,
 				1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */,
 				19629F6A122DE01A005E45E2 /* HansardView.xib in Resources */,
+				197095C41252D2CF00EA055B /* WebView.xib in Resources */,
+				193CD9C9125C3417002484D1 /* oa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +312,10 @@
 				239491F8122478D600B31272 /* OAServiceController.m in Sources */,
 				19629F69122DE01A005E45E2 /* HansardView.m in Sources */,
 				19629F81122DE3F3005E45E2 /* HansardServiceController.m in Sources */,
+				19543478125198F900C89862 /* SenateServiceController.m in Sources */,
+				197095BE1252BCE700EA055B /* openaustralia.xcdatamodel in Sources */,
+				197095C31252D2CF00EA055B /* WebView.m in Sources */,
+				193CD85D125BDF5A002484D1 /* HansardObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +374,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 			};
 			name = Debug;
 		};

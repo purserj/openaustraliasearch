@@ -1,7 +1,7 @@
 Topenaustraliasearch
 v7
 r0
-t305013160.188417
+t308032903.670217
 cCheck dependencies
 cProcessInfoPlistFile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist openaustraliasearch-Info.plist
 cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib
@@ -11,7 +11,10 @@ cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib
 cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib
 cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib
 cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib
-cProcessPCH /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch.gch openaustraliasearch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib
+cCpResource build/Debug-iphonesimulator/openaustraliasearch.app/oa.png Classes/oa.png
+cProcessPCH /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch.gch openaustraliasearch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cDataModelCompile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustralia.mom /Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o /Users/ClaudiaK/Documents/openaustraliasearch/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -23,6 +26,9 @@ cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasea
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/SenateServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/WebView.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardObject.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch normal i386
 cGenerateDSYMFile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch
 cTouch /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app
@@ -67,36 +73,97 @@ c000000004C0471620000000001D47210
 t1275359586
 s30700048
 
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C6C30170000000000000110
+t1282158615
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004C5A4E0B00000000001D2EC0
+t1280986635
+s1912512
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004C6C301100000000000002FE
+t1282158609
+s766
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004C6C303B000000000016DD50
+t1282158651
+s1498448
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.h
+c000000004CABEBC70000000000000416
+t1286335431
+s1046
+i<Foundation/Foundation.h>
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m
+c000000004CABEBC400000000000003BF
+t1286335428
+s959
+i"HansardObject.h"
+
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.h
-c000000004C7DE0BD00000000000002B7
-t1283317949
-s695
+c000000004C8EBDF100000000000005B3
+t1284423153
+s1459
 i<Foundation/Foundation.h>
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m
-c000000004C7DEA26000000000000081E
-t1283320358
-s2078
+c000000004CABAC140000000000000B84
+t1286319124
+s2948
 i"HansardServiceController.h"
 i"NSObject+YAJL.h"
+i"HansardObject.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.h
-c000000004C7DA9330000000000000143
-t1283303731
-s323
+c000000004CABD667000000000000056C
+t1286329959
+s1388
 i<UIKit/UIKit.h>
+i"HansardServiceController.h"
+i"HansardObject.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m
-c000000004C7DE0EA0000000000000727
-t1283317994
-s1831
+c000000004CABE6500000000000001509
+t1286334032
+s5385
 i"HansardView.h"
-i"HansardServiceController.h"
+i"HansardObject.h"
+i"WebView.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib
-c000000004C7DA9630000000000005361
-t1283303779
-s21345
+c000000004C9994FF0000000000006992
+t1285133567
+s27026
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.h
 c000000004C7C8C8700000000000000E9
@@ -123,15 +190,15 @@ i"YAJLGen.h"
 i"YAJLParser.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.h
-c000000004C745F0400000000000007C0
-t1282694916
+c000000004CA1616900000000000007C0
+t1285644649
 s1984
 i<Foundation/Foundation.h>
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m
-c000000004C7B336B0000000000000EA7
-t1283142507
-s3751
+c000000004CABFA590000000000000F34
+t1286339161
+s3892
 i"OAServiceController.h"
 i"NSObject+YAJL.h"
 i"RepObject.h"
@@ -157,9 +224,9 @@ i<MapKit/MapKit.h>
 i"RepObject.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m
-c000000004C7DA8EB0000000000000C93
-t1283303659
-s3219
+c000000004CA282060000000000000D70
+t1285718534
+s3440
 i"RepView.h"
 i"RepObject.h"
 i"HansardView.h"
@@ -187,41 +254,76 @@ t1282630394
 s6245
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.h
-c000000004C7DB56A000000000000050C
-t1283306858
-s1292
+c000000004CABF2F50000000000000661
+t1286337269
+s1633
 i<UIKit/UIKit.h>
 i"OAServiceController.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m
-c000000004C7DB552000000000000133D
-t1283306834
-s4925
+c000000004CABF7030000000000001989
+t1286338307
+s6537
 i"Search_HoR.h"
 i"RepObject.h"
 i"RepView.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib
-c000000004C7DE15F00000000000085B7
-t1283318111
-s34231
+c000000004CABFCD50000000000008EBD
+t1286339797
+s36541
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.h
-c000000004C7362FA0000000000000306
-t1282630394
-s774
+c000000004CA173E200000000000005F0
+t1285649378
+s1520
 i<UIKit/UIKit.h>
+i"SenateServiceController.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m
-c000000004C7362FA00000000000007BB
-t1282630394
-s1979
+c000000004CABCCCE00000000000017B2
+t1286327502
+s6066
 i"Search_Senate.h"
+i"RepObject.h"
+i"RepView.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib
-c000000004C7362FA0000000000001862
-t1282630394
-s6242
+c000000004CABCD040000000000007B13
+t1286327556
+s31507
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.h
+c000000004CABEBD80000000000000505
+t1286335448
+s1285
+i<Foundation/Foundation.h>
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m
+c000000004CABEBD30000000000000BDC
+t1286335443
+s3036
+i"SenateServiceController.h"
+i"NSObject+YAJL.h"
+i"RepObject.h"
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.h
+c000000004CABEBCC00000000000003F4
+t1286335436
+s1012
+i<UIKit/UIKit.h>
+i"HansardObject.h"
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m
+c000000004CABEBC90000000000000958
+t1286335433
+s2392
+i"WebView.h"
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib
+c000000004CABE89500000000000052F9
+t1286334613
+s21241
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/YAJLGen.h
 c000000004C745F040000000000000AD7
@@ -240,6 +342,11 @@ c000000004C745F040000000000091984
 t1282694916
 s596356
 
+N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/oa.png
+c000000004CABFC3F0000000000000D8E
+t1286339647
+s3470
+
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.h
 c000000004C747A1F0000000000000440
 t1282701855
@@ -254,18 +361,18 @@ i"openaustraliasearchAppDelegate.h"
 i"openaustraliasearchViewController.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.h
-c000000004C74889200000000000003F6
-t1282705554
-s1014
+c000000004CABFD150000000000000450
+t1286339861
+s1104
 i<UIKit/UIKit.h>
 i"Search_HoR.h"
 i"Search_Senate.h"
 i"Search_Hansard.h"
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m
-c000000004C748E0D0000000000000BAF
-t1282706957
-s2991
+c000000004CABFDBC0000000000000BEF
+t1286340028
+s3055
 i"openaustraliasearchViewController.h"
 i"Search_HoR.h"
 i"Search_Senate.h"
@@ -306,109 +413,133 @@ t1282702082
 s27067
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app
-t1283320360
-s476
+t1286340103
+s578
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM
-t1283320360
+t1286340030
 s136
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/HansardView.nib
-t1283320219
-s1302
+t1285133572
+s2964
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Hansard_View.nib
 t1283255695
 s1172
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist
-t1282700337
+t1284940575
 s645
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/MainWindow.nib
-t1282702210
-s1603
+t1284940577
+s2577
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/PkgInfo
-t1282700337
+t1284940575
 s8
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/RepView.nib
-t1283228005
-s3664
+t1284940578
+s6582
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Hansard.nib
-t1282700338
-s764
+t1284940578
+s1231
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_HoR.nib
-t1283320219
-s3035
+t1286340019
+s5928
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Senate.nib
-t1282700338
-s764
+t1286327563
+s4810
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/WebView.nib
+t1286334620
+s2194
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/oa.png
+t1286340019
+s3470
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustralia.mom
+t1286247141
+s488
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch
-t1283320360
-s151656
+t1286340030
+s190788
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearchViewController.nib
-t1282706937
-s2099
+t1286340103
+s3627
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardObject.o
+t1286336678
+s11192
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o
-t1283320360
-s16280
+t1286336678
+s17512
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o
-t1283320221
-s38120
+t1286336678
+s58312
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Hansard_View.o
 t1283256019
 s37872
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o
-t1283146089
-s19136
+t1286339163
+s19440
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepObject.o
-t1283146089
+t1284940581
 s15620
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepView.o
-t1283320221
-s50068
+t1286336678
+s50940
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Hansard.o
-t1282700339
-s34464
+t1284940581
+s34520
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_HoR.o
-t1283320221
-s56812
+t1286338312
+s67900
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Senate.o
-t1282700339
-s34444
+t1286336678
+s66772
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/SenateServiceController.o
+t1286336678
+s17616
+
+N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/WebView.o
+t1286336678
+s40572
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o
-t1282700339
+t1284940580
 s6316
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearch.LinkFileList
-c000000004C7DE99A0000000000000715
-t1283320218
-s1813
+c000000004CABAA5000000000000008FF
+t1286318672
+s2303
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o
-t1283320221
-s48640
+t1286340019
+s49544
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o
-t1283320221
-s39572
+t1286340030
+s42840
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/untitled.o
 t1282972307
@@ -420,10 +551,15 @@ t1282630394
 s374
 i<UIKit/UIKit.h>
 
+N/Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel
+c000000004CA285670000000000000088
+t1285719399
+s136
+
 N/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib
-c000000004C748D9700000000000062BB
-t1282706839
-s25275
+c000000004CABFDFA000000000000700A
+t1286340090
+s28682
 
 N/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch_Prefix.pch
 c000000004C7362FA00000000000000CF
@@ -431,6 +567,10 @@ t1282630394
 s207
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
+
+N/var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch.gch
+t1284940580
+s15211536
 
 N/var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch.gch
 t1282700339
@@ -443,11 +583,24 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies305013159#305013159#0(0"0(0#1#0"8622725376#0"0#
+lSLF07#2@18"Check dependencies308032903#308032903#0(0"0(0#1#0"8624534624#0"0#
+
+CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardObject.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s308029478.810312
+e308029478.880939
+r1
+xCompileC
+xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardObject.o
+x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m308029478#308029478#0(0"0(0#0#69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m8614531200#2257"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardObject.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardObject.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013159.941878
-e305013160.073151
+s308029478.694573
+e308029478.804519
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o
@@ -456,11 +609,32 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@88"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m305013159#305013160#0(0"0(0#0#80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m8619631584#2266"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o0#
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: In function '-[HansardServiceController getHansardResults:date:person:]':
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:33: warning: local declaration of 'type' hides instance variable
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:34: warning: local declaration of 'person' hides instance variable
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:34: warning: comparison between pointer and integer
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:36: warning: local declaration of 'person' hides instance variable
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: In function '-[HansardServiceController connectionDidFinishLoading:]':
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: 'NSArray' may not respond to '-objectForKey:'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: (Messages without a matching method signature
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: will be assumed to return 'id' and accept
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: '...' as arguments.)
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:75: warning: 'NSArray' may not respond to '-objectForKey:'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:76: warning: 'NSArray' may not respond to '-objectForKey:'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:77: warning: 'NSArray' may not respond to '-objectForKey:'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:79: warning: 'NSArray' may not respond to '-objectForKey:'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: At top level:
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'person' requires method '-person' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'person' requires the method 'setPerson:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'date' requires method '-date' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'date' requires the method 'setDate:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'type' requires method '-type' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'type' requires the method 'setType:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@88"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308029478#308029478#0(3366"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: In function '-[HansardServiceController getHansardResults:date:person:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:33: warning: local declaration of 'type' hides instance variable/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:34: warning: local declaration of 'person' hides instance variable/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:34: warning: comparison between pointer and integer/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:36: warning: local declaration of 'person' hides instance variable/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: In function '-[HansardServiceController connectionDidFinishLoading:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: 'NSArray' may not respond to '-objectForKey:'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: (Messages without a matching method signature/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: will be assumed to return 'id' and accept/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:74: warning: '...' as arguments.)/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:75: warning: 'NSArray' may not respond to '-objectForKey:'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:76: warning: 'NSArray' may not respond to '-objectForKey:'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:77: warning: 'NSArray' may not respond to '-objectForKey:'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:79: warning: 'NSArray' may not respond to '-objectForKey:'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m: At top level:/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'person' requires method '-person' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'person' requires the method 'setPerson:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'date' requires method '-date' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'date' requires the method 'setDate:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'type' requires method '-type' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m:93: warning: property 'type' requires the method 'setType:' to be defined - use @synthesize, @dynamic or provide a method implementation17(22@51"Local declaration of 'type' hides instance variable308029478#156#146#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#33#0#33#0#0"0(22@53"Local declaration of 'person' hides instance variable308029478#302#148#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#34#0#34#0#0"0(22@38"Comparison between pointer and integer308029478#450#133#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#34#0#34#0#0"0(22@53"Local declaration of 'person' hides instance variable308029478#583#148#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#36#0#36#0#0"0(22@45"'NSArray' may not respond to '-objectForKey:'308029478#884#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#74#0#74#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)308029478#1024#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#74#0#74#0#0"0(22@45"'NSArray' may not respond to '-objectForKey:'308029478#1415#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#75#0#75#0#26"'*' may not respond to '*'0(22@45"'NSArray' may not respond to '-objectForKey:'308029478#1555#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#76#0#76#0#26"'*' may not respond to '*'0(22@45"'NSArray' may not respond to '-objectForKey:'308029478#1695#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#77#0#77#0#26"'*' may not respond to '*'0(22@45"'NSArray' may not respond to '-objectForKey:'308029478#1835#140#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#79#0#79#0#26"'*' may not respond to '*'0(23@13"At top level:308029478#1975#96#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#0#0#0#0#0"0(22@120"Property 'person' requires method '-person' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#2071#215#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(22@127"Property 'person' requires the method 'setPerson:' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#2286#222#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(22@116"Property 'date' requires method '-date' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#2508#211#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(22@123"Property 'date' requires the method 'setDate:' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#2719#218#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(22@116"Property 'type' requires method '-type' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#2937#211#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(22@123"Property 'type' requires the method 'setType:' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#3148#218#0(6@80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m308011924#93#0#93#0#0"0(0#0#80"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m8622266848#2279"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardServiceController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardServiceController.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013021.533481
-e305013021.618130
+s308029478.517176
+e308029478.694469
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o
@@ -469,9 +643,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m: In function '-[HansardView initWithNibName:bundle:]':
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m:21: warning: class 'HansardView' does not implement the 'HansardServiceControllerDelegate' protocol
-lSLF07#2@75"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m305013021#305013021#0(291"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m: In function '-[HansardView initWithNibName:bundle:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m:21: warning: class 'HansardView' does not implement the 'HansardServiceControllerDelegate' protocol1(22@86"Class 'HansardView' does not implement the 'HansardServiceControllerDelegate' protocol305013021#123#168#0(6@67"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m305010794#21#0#21#0#45"class '*' does not implement the '*' protocol0(0#0#67"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m8621056832#2240"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o0#
+lSLF07#2@75"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m308029478#308029478#0(0"0(0#0#67"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m8623686080#2253"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/HansardView.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Hansard_View.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s304948819.727397
@@ -487,8 +659,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@76"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.m304948819#304948819#0(0"0(0#0#68"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.m8607834272#2242"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Hansard_View.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s304838889.069950
-e304838889.207213
+s308031963.820525
+e308031963.952556
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o
@@ -497,11 +669,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@83"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m304838889#304838889#0(0"0(0#0#75"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m8616848000#2256"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o0#
+lSLF07#2@83"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m308031963#308031963#0(0"0(0#0#75"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m8619591936#2269"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/OAServiceController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/OAServiceController.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepObject.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s304838889.019556
-e304838889.112427
+s306633381.056666
+e306633381.165668
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepObject.o
@@ -510,11 +682,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m304838889#304838889#0(0"0(0#0#65"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m8618643680#2236"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepObject.o0#
+lSLF07#2@73"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m306633381#306633381#0(0"0(0#0#65"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m8599711776#2249"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepObject.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepObject.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepView.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013021.223290
-e305013021.534521
+s308029478.338672
+e308029478.516701
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepView.o
@@ -524,17 +696,17 @@ xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView viewDidLoad]':
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: 'RepView' may not respond to '-downloadImage'
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: (Messages without a matching method signature
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: will be assumed to return 'id' and accept
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: '...' as arguments.)
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: 'RepView' may not respond to '-downloadImage'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: (Messages without a matching method signature
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: will be assumed to return 'id' and accept
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: '...' as arguments.)
 o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView downloadImage]':
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:63: warning: format not a string literal and no format arguments
-lSLF07#2@71"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m305013021#305013021#0(800"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView viewDidLoad]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: 'RepView' may not respond to '-downloadImage'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: (Messages without a matching method signature/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: will be assumed to return 'id' and accept/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:56: warning: '...' as arguments.)/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView downloadImage]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:63: warning: format not a string literal and no format arguments3(22@45"'RepView' may not respond to '-downloadImage'305013021#103#123#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m304996459#56#0#56#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)305013021#226#123#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m304996459#56#0#56#0#0"0(22@51"Format not a string literal and no format arguments305013021#671#129#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m304996459#63#0#63#0#51"format not a string literal and no format arguments0(0#0#63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m8621447744#2232"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepView.o0#
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:64: warning: format not a string literal and no format arguments
+lSLF07#2@71"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m308029478#308029478#0(800"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView viewDidLoad]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: 'RepView' may not respond to '-downloadImage'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: (Messages without a matching method signature/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: will be assumed to return 'id' and accept/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:57: warning: '...' as arguments.)/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m: In function '-[RepView downloadImage]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m:64: warning: format not a string literal and no format arguments3(22@45"'RepView' may not respond to '-downloadImage'308029478#103#123#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m307411334#57#0#57#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)308029478#226#123#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m307411334#57#0#57#0#0"0(22@51"Format not a string literal and no format arguments308029478#671#129#0(6@63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m307411334#64#0#64#0#51"format not a string literal and no format arguments0(0#0#63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m8620247136#2245"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/RepView.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Hansard.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s304393139.882856
-e304393139.956351
+s306633381.055592
+e306633381.164555
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Hansard.o
@@ -543,11 +715,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m304393139#304393139#0(0"0(0#0#70"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m8608658400#2246"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Hansard.o0#
+lSLF07#2@78"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m306633381#306633381#0(0"0(0#0#70"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m8604134304#2259"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Hansard.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_HoR.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013021.272212
-e305013021.532970
+s308031112.323816
+e308031112.504117
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_HoR.o
@@ -556,13 +728,18 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m: In function '-[Search_HoR getResults:]':
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:93: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:93: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSDate *' when passing argument 2 of 'searchForRepresentativesWithPostcode:date:party:search:' from distinct Objective-C type
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:96: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:99: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast
 o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m: In function '-[Search_HoR tableView:cellForRowAtIndexPath:]':
-o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:138: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)
-lSLF07#2@74"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m305013021#305013021#0(406"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m: In function '-[Search_HoR tableView:cellForRowAtIndexPath:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:138: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)305013021#130#276#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m304999634#138#0#138#0#33"'*' is deprecated (declared at *)0(0#0#66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m8620759680#2238"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_HoR.o0#
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:159: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)
+lSLF07#2@74"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031112#308031112#0(1396"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m: In function '-[Search_HoR getResults:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:93: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:93: warning: incompatible Objective-C types 'struct NSString *', expected 'struct NSDate *' when passing argument 2 of 'searchForRepresentativesWithPostcode:date:party:search:' from distinct Objective-C type/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:96: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:99: warning: passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m: In function '-[Search_HoR tableView:cellForRowAtIndexPath:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m:159: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)5(22@121"Passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast308031112#109#202#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031107#93#0#93#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@194"Incompatible Objective-C types 'struct NSString *', expected 'struct NSDate *' when passing argument 2 of 'searchForRepresentativesWithPostcode:date:party:search:' from distinct Objective-C type308031112#311#275#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031107#93#0#93#0#0"0(22@121"Passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast308031112#586#202#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031107#96#0#96#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@121"Passing argument 1 of 'searchForRepresentativesWithPostcode:date:party:search:' makes integer from pointer without a cast308031112#788#202#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031107#99#0#99#0#67"passing argument * of '*' makes integer from pointer without a cast0(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)308031112#1120#276#0(6@66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m308031107#159#0#159#0#33"'*' is deprecated (declared at *)0(0#0#66"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m8623867072#2251"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_HoR.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Senate.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s304393139.804826
-e304393139.902299
+s308029478.509785
+e308029478.695691
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Senate.o
@@ -571,11 +748,43 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m304393139#304393139#0(0"0(0#0#69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m8607453120#2244"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Senate.o0#
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m: In function '-[Search_Senate serviceController:foundSenators:]':
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m:54: warning: incompatible Objective-C types assigning 'struct NSArray *', expected 'struct NSMutableArray *'
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m: In function '-[Search_Senate tableView:cellForRowAtIndexPath:]':
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m:159: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)
+lSLF07#2@77"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m308029478#308029478#0(730"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m: In function '-[Search_Senate serviceController:foundSenators:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m:54: warning: incompatible Objective-C types assigning 'struct NSArray *', expected 'struct NSMutableArray *'/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m: In function '-[Search_Senate tableView:cellForRowAtIndexPath:]':/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m:159: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)2(22@95"Incompatible Objective-C types assigning 'struct NSArray *', expected 'struct NSMutableArray *'308029478#136#179#0(6@69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m308020302#54#0#54#0#58"incompatible Objective-C types assigning '*', expected '*'0(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)308029478#451#279#0(6@69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m308020302#159#0#159#0#33"'*' is deprecated (declared at *)0(0#0#69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m8624230176#2257"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/Search_Senate.o0#
+
+CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/SenateServiceController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s308029478.695762
+e308029478.810216
+r1
+xCompileC
+xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/SenateServiceController.o
+x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m:90: warning: property 'state' requires method '-state' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m:90: warning: property 'state' requires the method 'setState:' to be defined - use @synthesize, @dynamic or provide a method implementation
+lSLF07#2@87"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m308029478#308029478#0(431"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m:90: warning: property 'state' requires method '-state' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m:90: warning: property 'state' requires the method 'setState:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@118"Property 'state' requires method '-state' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#0#212#0(6@79"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m308028243#90#0#90#0#0"0(22@125"Property 'state' requires the method 'setState:' to be defined - use @synthesize, @dynamic or provide a method implementation308029478#212#219#0(6@79"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m308028243#90#0#90#0#0"0(0#0#79"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m8621377472#2277"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/SenateServiceController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/SenateServiceController.o0#
+
+CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/WebView.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s308029478.804685
+e308029478.892620
+r1
+xCompileC
+xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/WebView.o
+x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m308029478#308029478#0(0"0(0#0#63"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m8623914560#2245"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/WebView.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o /Users/ClaudiaK/Documents/openaustraliasearch/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s304393139.490209
-e304393139.702593
+s306633380.473698
+e306633380.726115
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o
@@ -584,11 +793,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@60"Compile /Users/ClaudiaK/Documents/openaustraliasearch/main.m304393139#304393139#0(0"0(0#0#52"/Users/ClaudiaK/Documents/openaustraliasearch/main.m8609150240#2218"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/main.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o0#
+lSLF07#2@60"Compile /Users/ClaudiaK/Documents/openaustraliasearch/main.m306633380#306633380#0(0"0(0#0#52"/Users/ClaudiaK/Documents/openaustraliasearch/main.m8605618080#2231"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/main.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/main.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013019.895657
-e305013021.272114
+s308032819.560773
+e308032819.668129
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o
@@ -597,11 +806,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@94"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m305013019#305013021#0(0"0(0#0#86"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m8603808352#2278"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o0#
+lSLF07#2@94"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m308032819#308032819#0(0"0(0#0#86"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m8623906848#2291"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchAppDelegate.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchAppDelegate.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s305013019.896700
-e305013021.223122
+s308032830.243487
+e308032830.460346
 r1
 xCompileC
 xbuild/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o
@@ -610,7 +819,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@97"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m305013019#305013021#0(0"0(0#0#89"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m8622700032#2284"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o0#
+lSLF07#2@97"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m308032830#308032830#0(0"0(0#0#89"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m8619086560#2297"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/openaustraliasearchViewController.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearchViewController.o0#
 
 CCompileC build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/untitled.o /Users/ClaudiaK/Documents/openaustraliasearch/Classes/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s304665106.903693
@@ -626,13 +835,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@72"Compile /Users/ClaudiaK/Documents/openaustraliasearch/Classes/untitled.m304665106#304665107#0(0"0(0#0#64"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/untitled.m8616147136#2234"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -include /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch -c /Users/ClaudiaK/Documents/openaustraliasearch/Classes/untitled.m -o /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/untitled.o0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib
-s305013018.965988
-e305013019.777445
+s306826371.838471
+e306826372.386129
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@34"CompileXIB Classes/HansardView.xib305013018#305013019#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib8621802560#613"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/HansardView.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@34"CompileXIB Classes/HansardView.xib306826371#306826372#0(0"0(0#0#69"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib8607481888#613"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/HansardView.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/HansardView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.xib
 s304948495.057215
@@ -644,83 +852,125 @@ oCouldn't open shared capabilities memory GSCapabilities (No such file or direct
 lSLF07#2@35"CompileXIB Classes/Hansard_View.xib304948495#304948495#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#70"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.xib8608578592#615"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Hansard_View.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Hansard_View.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib
-s304920803.723704
-e304920805.425846
+s306633377.334052
+e306633378.813926
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib
-lSLF07#2@30"CompileXIB Classes/RepView.xib304920803#304920805#0(0"0(0#0#65"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib8615578528#605"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/RepView.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@30"CompileXIB Classes/RepView.xib306633377#306633378#0(504"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#65"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib8603306432#605"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/RepView.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/RepView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib
-s304393137.946654
-e304393138.410461
+s306633378.608578
+e306633378.968424
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@37"CompileXIB Classes/Search_Hansard.xib304393137#304393138#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#72"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib8607746720#619"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Hansard.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@37"CompileXIB Classes/Search_Hansard.xib306633378#306633378#0(0"0(0#0#72"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib8607015680#619"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Hansard.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Hansard.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib
-s305013018.964982
-e305013019.895348
+s308032818.643190
+e308032819.486936
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@33"CompileXIB Classes/Search_HoR.xib305013018#305013019#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#68"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib8616659264#611"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_HoR.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@33"CompileXIB Classes/Search_HoR.xib308032818#308032819#0(0"0(0#0#68"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib8617872160#611"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_HoR.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_HoR.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib
-s304393137.941133
-e304393138.366712
+s308020361.268582
+e308020363.250143
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@36"CompileXIB Classes/Search_Senate.xib304393137#304393138#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#71"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib8608000864#617"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Senate.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@36"CompileXIB Classes/Search_Senate.xib308020361#308020363#0(0"0(0#0#71"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib8612506560#617"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Search_Senate.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/Search_Senate.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib
+s308027420.149297
+e308027420.775711
+r1
+xCompileXIB
+x/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib
+lSLF07#2@30"CompileXIB Classes/WebView.xib308027420#308027420#0(0"0(0#0#65"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib8617877120#605"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/WebView.nib /Users/ClaudiaK/Documents/openaustraliasearch/Classes/WebView.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib
-s304395010.309706
-e304395010.849486
+s306633375.923929
+e306633377.333876
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib304395010#304395010#0(0"0(0#0#60"/Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib8617353664#603"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/MainWindow.nib /Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@25"CompileXIB MainWindow.xib306633375#306633377#0(0"0(0#0#60"/Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib8607121568#603"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/MainWindow.nib /Users/ClaudiaK/Documents/openaustraliasearch/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
 
 CCompileXIB /Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib
-s304399736.719701
-e304399737.699197
+s308032903.023596
+e308032903.663869
 r1
 xCompileXIB
 x/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib
-lSLF07#2@48"CompileXIB openaustraliasearchViewController.xib304399736#304399737#0(0"0(0#0#83"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib8619462464#649"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearchViewController.nib /Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+lSLF07#2@48"CompileXIB openaustraliasearchViewController.xib308032903#308032903#0(0"0(0#0#83"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib8621448160#649"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearchViewController.nib /Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearchViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCpResource build/Debug-iphonesimulator/openaustraliasearch.app/oa.png Classes/oa.png
+s308032819.487521
+e308032819.560300
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/openaustraliasearch.app/oa.png
+xClasses/oa.png
+lSLF07#2@19"Copy Classes/oa.png308032819#308032819#0(0"0(0#0#60"/Users/ClaudiaK/Documents/openaustraliasearch/Classes/oa.png8607653696#491"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/ClaudiaK/Documents/openaustraliasearch/Classes/oa.png /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app0#
+
+CDataModelCompile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustralia.mom /Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel
+s307939940.746107
+e307939941.842078
+r1
+xDataModelCompile
+x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustralia.mom
+x/Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel
+lSLF07#2@79"Compile /Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel307939940#307939941#0(0"0(0#0#71"/Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel8606049504#429"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/ClaudiaK/Documents/openaustraliasearch/openaustralia.xcdatamodel /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustralia.mom0#
 
 CGenerateDSYMFile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch
-s305013160.148038
-e305013160.185814
+s308032830.564710
+e308032830.645416
 r1
 xGenerateDSYMFile
 x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM
 x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch
-lSLF07#2@145"GenerateDSYMFile build/Debug-iphonesimulator/openaustraliasearch.app.dSYM build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch305013160#305013160#0(0"0(0#0#117"/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch8622505920#440"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM0#
+lSLF07#2@145"GenerateDSYMFile build/Debug-iphonesimulator/openaustraliasearch.app.dSYM build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch308032830#308032830#0(0"0(0#0#117"/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch8617416160#440"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app.dSYM0#
 
 CLd /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch normal i386
-s305013160.073245
-e305013160.147927
+s308032830.460441
+e308032830.564603
 r1
 xLd
 x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch
 xnormal
 xi386
-lSLF07#2@122"Link /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch305013160#305013160#0(0"0(0#0#0"8623336640#1098"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -L/Users/ClaudiaK/Documents/openaustraliasearch/Classes -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -filelist /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearch.LinkFileList -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lYAJLIPhone -framework MapKit -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch0#
+lSLF07#2@122"Link /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch308032830#308032830#0(0"0(0#0#0"8618987424#1118"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -L/Users/ClaudiaK/Documents/openaustraliasearch/Classes -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -filelist /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/Objects-normal/i386/openaustraliasearch.LinkFileList -mmacosx-version-min=10.6 -all_load -ObjC -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -lYAJLIPhone -framework MapKit -framework CoreData -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/openaustraliasearch0#
 
 CProcessInfoPlistFile /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist openaustraliasearch-Info.plist
-s304393137.040446
-e304393137.061622
+s306633375.697272
+e306633375.923835
 r1
 xProcessInfoPlistFile
 x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist
 xopenaustraliasearch-Info.plist
-lSLF07#2@38"Process openaustraliasearch-Info.plist304393137#304393137#0(0"0(0#0#76"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch-Info.plist27303523719577696#536"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility openaustraliasearch-Info.plist -genpkginfo /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist0#
+lSLF07#2@38"Process openaustraliasearch-Info.plist306633375#306633375#0(0"0(0#0#76"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch-Info.plist27303523719577696#536"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility openaustraliasearch-Info.plist -genpkginfo /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app/Info.plist0#
+
+CProcessPCH /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch.gch openaustraliasearch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306633379.235790
+e306633380.473528
+r1
+xProcessPCH
+x/var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch.gch
+xopenaustraliasearch_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@41"Precompile openaustraliasearch_Prefix.pch306633379#306633380#0(0"0(0#0#76"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch_Prefix.pch8604192672#2104"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40100 -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -c /Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch_Prefix.pch -o /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-bxtnafjjirkbjmaeeffiugjgkuvv/openaustraliasearch_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch.gch openaustraliasearch_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 s304393138.410601
@@ -736,10 +986,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@41"Precompile openaustraliasearch_Prefix.pch304393138#304393139#0(0"0(0#0#76"/Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch_Prefix.pch8609374208#2091"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-generated-files.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-own-target-headers.hmap -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-all-target-headers.hmap -iquote /Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/openaustraliasearch-project-headers.hmap -F/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator -I/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/include -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources/i386 -I/Users/ClaudiaK/Documents/openaustraliasearch/build/openaustraliasearch.build/Debug-iphonesimulator/openaustraliasearch.build/DerivedSources -c /Users/ClaudiaK/Documents/openaustraliasearch/openaustraliasearch_Prefix.pch -o /var/folders/Ri/RiBefuldEn4nGNSj3Ihsp++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/openaustraliasearch_Prefix-csruzdtfuscrpjbadjsqabjltjmp/openaustraliasearch_Prefix.pch.gch0#
 
 CTouch /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app
-s305013160.185905
-e305013160.188388
+s308032903.666588
+e308032903.670178
 r1
 xTouch
 x/Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app
-lSLF07#2@103"Touch /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app305013160#305013160#0(0"0(0#0#0"8622337600#304"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app0#
+lSLF07#2@103"Touch /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app308032903#308032903#0(0"0(0#0#0"8619758304#304"    cd /Users/ClaudiaK/Documents/openaustraliasearch    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ClaudiaK/Documents/openaustraliasearch/build/Debug-iphonesimulator/openaustraliasearch.app0#
 

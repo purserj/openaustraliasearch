@@ -21,6 +21,7 @@
 
 #import "HansardServiceController.h"
 #import "NSObject+YAJL.h"
+#import "HansardObject.h"
 
 
 @implementation HansardServiceController
@@ -59,30 +60,24 @@
 		
 		//NSLog(@"%@", jsonString);
 		
-		NSArray *results = [jsonString yajl_JSON];
-		if([results containsObject: @"rows"]){
-			NSLog(@"Contains rows");
-		} else {
-			//NSLog(@"%@", results);
-		}
+		NSDictionary *results = [jsonString yajl_JSON];
+		NSLog(@"Contains rows");
+		NSDictionary *rows = [results objectForKey:@"rows"];
+		
 
 		// TODO: create an array of representative objects by getting the
 		//       relevant values out of the array of dictionaries.
 		NSMutableArray *hansresults = [[NSMutableArray alloc] initWithCapacity:results.count];
 		
-		for (NSDictionary *hansDict in results) {
-			//NSLog(@"%@", [hansDict valueForKey:<#(NSString *)key#>]);
-			//for (NSString *key in [hansDict allKeys]) {
-			//	NSLog(@"%@: %@", key, [hansDict valueForKey:key]);
-			//}
+		for(NSArray *row in rows){
+			HansardObject *hansObj = [[HansardObject alloc] init];
+			[hansObj setBody:[row objectForKey:@"body"]];
+			[hansObj setParent:[row objectForKey:@"parent"]];
+			[hansObj setLink:[row objectForKey:@"listurl"]];
+			[hansObj setDate:[row objectForKey:@"hdate"]];
+			[hansresults addObject:hansObj];
+			NSLog(@"Row: %@", [row objectForKey:@"body"]);
 		}
-		for(NSString *element in results)
-		{
-			NSLog(@"Element: %@", element);
-			
-		}
-		
-		
 		
 		// TODO: call the delegate method with the array of representatives
 		if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(serviceController:foundHansResults:)]) {
