@@ -21,12 +21,14 @@
 #import <UIKit/UIKit.h>
 #import "OAServiceController.h"
 
-@interface Search_HoR : UIViewController <UITextFieldDelegate, OAServiceControllerDelegate, UITableViewDelegate, UITableViewDataSource>{
-	IBOutlet UITextField *textField;
+@interface Search_HoR : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIActionSheetDelegate, UITextFieldDelegate,OAServiceControllerDelegate, UITableViewDelegate, UITableViewDataSource>{
+	IBOutlet UITextField *textField; 
 	IBOutlet UITableView *resultTable;
-	
+	IBOutlet UIPickerView *searchTypePicker;
+	NSArray *stypes;
 	NSMutableArray *results;
 	NSMutableArray *reps;
+	NSString *stype;
 
 }
 
@@ -36,8 +38,12 @@
 
 -(IBAction)popUpPicker:(id)sender;
 
+-(IBAction)selectSearchType:(id)sender;
+
 @property (nonatomic, retain) IBOutlet UITextField *textField;
 @property (nonatomic, retain) IBOutlet UITableView *resultTable;
 @property (nonatomic, retain) NSArray *results;
-
+@property (nonatomic, retain) UIPickerView *searchTypePicker;
+@property (nonatomic, retain) NSArray *stypes;
+@property (nonatomic, retain) NSString *stype;
 @end

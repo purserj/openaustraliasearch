@@ -20,10 +20,17 @@
 
 
 #import "Search_Senate.h"
+#import "RepObject.h"
+#import "RepView.h"
 
 
 @implementation Search_Senate
-
+@synthesize states;
+@synthesize statePicker;
+@synthesize stateLabel;
+@synthesize repsTable;
+@synthesize reps;
+@synthesize results;
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -34,12 +41,36 @@
 }
 */
 
-/*
+- (void)serviceController:(id)controller foundSenators:(NSArray *)senators{
+	results = [NSMutableArray new];
+	reps = [NSMutableArray new];
+	
+	for (RepObject *senator in senators) {
+		NSString *res = [NSString stringWithFormat:@"%@ \n\n %@", senator.fullName, senator.partyName];
+		NSLog(@"String - %@",res);
+		[results addObject:res];
+	}
+	NSLog(@"Results Count - %d", [results count]);
+	reps = senators;
+	[reps retain];
+	[results retain];
+	[repsTable reloadData];
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	states = [[NSArray arrayWithObjects:
+			   @"Select your state",
+			   @"NSW",
+			   @"QLD",
+			   @"Vic",
+			   @"Tas",
+			   @"SA",
+			   @"WA",
+			   @"ACT",
+			   @"NT", nil] retain];
     [super viewDidLoad];
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -67,5 +98,99 @@
     [super dealloc];
 }
 
+-(IBAction)selectState:(id)sender{
+	[statePicker setHidden:NO];
+	NSLog(@"Change State Button is pressed");
+}
+	
+// statePicker setup functions
+- (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component {
+	
+	return [states count];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)thePickerView {
+	
+	return 1;
+}
+
+- (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+	
+	return [states objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+	
+	NSLog(@"Selected Color: %@. Index of selected color: %i", [states objectAtIndex:row], row);
+	[statePicker setHidden:YES];
+	stateLabel.text=(@"Senators for %@", [states objectAtIndex:row]);
+	SenateServiceController *controller = [[SenateServiceController alloc] init];
+	[controller setDelegate:self];
+	[controller searchForSenatorsByState:[states objectAtIndex:row]];
+	
+	
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    //return [results count];
+	return [results count];
+	NSLog(@"Result count - %d", [results count]);
+}
+
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+	cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0];
+    cell.text = [results objectAtIndex:indexPath.row]; 
+    // Configure the cell...
+    
+    return cell;
+}
+
+#pragma mark -
+#pragma mark Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	RepObject *repp = (RepObject *)[reps objectAtIndex:indexPath.row];
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	RepView *rview = [[RepView alloc] initWithNibName:nil bundle:nil];
+	rview.rep = repp;
+	NSString *party = repp.partyName;
+	NSLog(@"Reps count check - %d", [reps count]);
+	NSLog(@"Party name - %@", party);
+	NSLog(@"Full Name - %@", repp.fullName);
+	NSLog(@"Index - %d", indexPath.row);
+	[self presentModalViewController:rview animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellText = [results objectAtIndex:indexPath.row];
+    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:17.0];
+    CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
+    CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+	
+    return labelSize.height + 20;
+}
+
+- (IBAction)goHome:(id)sender
+{
+	[self dismissModalViewControllerAnimated:YES];	
+}
 
 @end

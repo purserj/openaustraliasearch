@@ -1,9 +1,9 @@
 //
-//  openaustraliasearchViewController.h
+//  WebView.h
 //  openaustraliasearch
 //
-//    Created by James Purser on 24/08/10.
-//  Copyright 2010 James Purser
+//  Created by James Purser on 29/09/10.
+//  Copyright 2010 James Purser. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -20,21 +20,18 @@
 
 
 #import <UIKit/UIKit.h>
-#import "Search_HoR.h"
-#import "Search_Senate.h"
-#import "Search_Hansard.h"
+#import "HansardObject.h"
 
-@interface openaustraliasearchViewController : UIViewController {
-	IBOutlet Search_HoR *search_hor;
-	IBOutlet UIImageView *image;
+
+@interface WebView : UIViewController {
+	HansardObject *hansObj;
+	
+	IBOutlet UIWebView *webview;
 }
 
-@property (nonatomic, retain) Search_HoR *search_hor;
+-(IBAction)closeView:(id)sender;
 
-
--(IBAction)switchView:(id)sender;
-
-@property (nonatomic, retain) IBOutlet UIImageView *image;
+@property (nonatomic, retain) IBOutlet UIWebView *webview;
+@property (nonatomic, retain) HansardObject *hansObj;
 
 @end
-

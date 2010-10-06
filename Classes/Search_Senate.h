@@ -20,10 +20,26 @@
 
 
 #import <UIKit/UIKit.h>
+#import "SenateServiceController.h"
 
 
-@interface Search_Senate : UIViewController {
-
+@interface Search_Senate : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UIActionSheetDelegate, SenateServiceControllerDelegate, UITableViewDelegate, UITableViewDataSource> {
+	NSArray *states;
+	IBOutlet UILabel *stateLabel;
+	IBOutlet UIPickerView *statePicker;
+	IBOutlet UITableView *repsTable;
+	NSMutableArray *results;
+	NSMutableArray *reps;
 }
+
+-(IBAction)selectState:(id)sender;
+-(IBAction)goHome:(id)sender;
+
+@property(nonatomic, retain) NSArray *states;
+@property(nonatomic, retain) IBOutlet UIPickerView *statePicker;
+@property(nonatomic, retain) UILabel *stateLabel;
+@property(nonatomic, retain) IBOutlet UITableView *repsTable;
+@property(nonatomic, retain) NSMutableArray *results;
+@property(nonatomic, retain) NSMutableArray *reps;
 
 @end

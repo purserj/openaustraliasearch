@@ -27,18 +27,18 @@
 
 @implementation openaustraliasearchViewController
 @synthesize search_hor;
+@synthesize image;
 
 
 
-/*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
+		[image setImage:[UIImage imageNamed:@"oa.png"]];
     }
     return self;
 }
-*/
 
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.

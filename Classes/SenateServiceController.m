@@ -1,9 +1,9 @@
 //
-//  OAServiceController.m
+//  SenateServiceController.m
 //  openaustraliasearch
 //
-//  Created by Jake MacMullin on 25/08/10.
-//  Copyright 2010 Jake MacMullin.
+//  Created by James Purser on 28/09/10.
+//  Copyright 2010 James Purser. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -17,42 +17,31 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
-//
 
-#import "OAServiceController.h"
+
+#import "SenateServiceController.h"
 #import "NSObject+YAJL.h"
 #import "RepObject.h"
 
-@implementation OAServiceController
+@implementation SenateServiceController
 
 @synthesize delegate;
 
-- (void)searchForRepresentativesWithPostcode:(int)postcode date:(NSDate *)date party:(NSString *)party search:(NSString *)searchTerm {
+- (void)searchForSenatorsByState:(NSString *)state{
+	stateStr = state;
+	NSString *urlString = [NSString stringWithFormat:@"http://www.openaustralia.org/api/getSenators?key=Dx3bPFCRAQhCA99zCWGRup3C&output=js&"];
+	if (state!=nil) {
+		urlString = [urlString stringByAppendingFormat:@"&state=%@", state];
+	}
 	
-	NSString *urlString = [NSString stringWithFormat:@"http://www.openaustralia.org/api/getRepresentatives?key=Dx3bPFCRAQhCA99zCWGRup3C&output=js&"];
-	if (postcode!=-1) {
-		urlString = [urlString stringByAppendingFormat:@"&postcode=%i", postcode];
-	}
-	if (date!=nil) {
-		urlString = [urlString stringByAppendingFormat:@"&date=%@", date];
-	}
-	if (party!=nil) {
-		urlString = [urlString stringByAppendingFormat:@"&party=%@", party];
-	}
-	if (searchTerm!=nil) {
-		urlString = [urlString stringByAppendingFormat:@"&search=%@", searchTerm];
-	}
-	NSLog(@"URL: %@", urlString);
+	NSLog(@"%@", urlString);
 	NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]];
 	
 	// create a new connection (sends request immediately)
 	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 	[request release];
+	
 }
-
-
-#pragma mark -
-#pragma mark NSURLConnection Delegate Methods
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)someData {
 	if (data==nil) {
@@ -69,23 +58,18 @@
 		
 		// TODO: create an array of representative objects by getting the
 		//       relevant values out of the array of dictionaries.
-		NSMutableArray *representatives = [[NSMutableArray alloc] initWithCapacity:results.count];
+		NSMutableArray *senators = [[NSMutableArray alloc] initWithCapacity:results.count];
 		
 		for (NSDictionary *representativeDict in results) {
-
+			
 			RepObject *representative = [[RepObject alloc] init];
-			if([representativeDict objectForKey:@"name"] != NULL){
-				[representative setFullName:[representativeDict valueForKey:@"name"]];
-			} else {
-				[representative setFirstName:[representativeDict valueForKey:@"first_name"]];
-				[representative setLastName:[representativeDict valueForKey:@"last_name"]];
-				[representative setFullName:[representativeDict valueForKey:@"full_name"]];
-			}
+			[representative setFullName:[representativeDict valueForKey:@"name"]];
 			[representative setPartyName:[representativeDict valueForKey:@"party"]];
-			[representative setConstituency:[representativeDict valueForKey:@"constituency"]];	
 			[representative setPersonIdentifier:[representativeDict valueForKey:@"person_id"]];
-			[representative setHouseIdentifier:@"1"];
-			[representatives addObject:representative];
+			[representative setConstituency:stateStr];
+			[representative setHouseIdentifier:@"2"];
+
+			[senators addObject:representative];
 			[representative release];
 			
 			for (NSString *key in [representativeDict allKeys]) {
@@ -95,18 +79,12 @@
 		
 		
 		// TODO: call the delegate method with the array of representatives
-		if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(serviceController:foundRepresentatives:)]) {
-			[self.delegate serviceController:self foundRepresentatives:representatives];
+		if (self.delegate!=nil && [self.delegate respondsToSelector:@selector(serviceController:foundSenators:)]) {
+			[self.delegate serviceController:self foundSenators:senators];
 		}
 		
 		[connection release];
 	}
-}
-
-
-- (void)dealloc {
-	[super dealloc];
-	[delegate release];
 }
 
 @end
