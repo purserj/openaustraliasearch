@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="21"/>
+			<integer value="1"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -121,7 +121,7 @@
 							<object class="IBUITableView" id="1047060079">
 								<reference key="NSNextResponder" ref="299313948"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrameSize">{280, 245}</string>
+								<string key="NSFrame">{{20, 0}, {280, 245}}</string>
 								<reference key="NSSuperview" ref="299313948"/>
 								<object class="NSColor" key="IBUIBackgroundColor">
 									<int key="NSColorSpace">3</int>
@@ -141,15 +141,14 @@
 							<object class="IBUIPickerView" id="630877144">
 								<reference key="NSNextResponder" ref="299313948"/>
 								<int key="NSvFlags">-2147483358</int>
-								<string key="NSFrame">{{-20, 46}, {320, 216}}</string>
+								<string key="NSFrame">{{20, 29}, {280, 216}}</string>
 								<reference key="NSSuperview" ref="299313948"/>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<bool key="IBUIShowsSelectionIndicator">YES</bool>
 							</object>
 						</object>
-						<string key="NSFrame">{{20, 155}, {280, 245}}</string>
+						<string key="NSFrame">{{0, 155}, {320, 261}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
@@ -164,9 +163,14 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Search Criteria</string>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">17</double>
+							<int key="NSfFlags">16</int>
+						</object>
 						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC45NjA3ODQzNzU3IDEgMC45ODQzMTM3ODYAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -196,9 +200,8 @@
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<reference key="NSCustomColorSpace" ref="441760754"/>
+					<int key="NSColorSpace">2</int>
+					<bytes key="NSRGB">MCAwLjQzNTI5NDE1MTMgMC42NDcwNTg4NDQ2AA</bytes>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -304,6 +307,14 @@
 						<reference key="destination" ref="630877144"/>
 					</object>
 					<int key="connectionID">50</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">searchTypeLabel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="424783829"/>
+					</object>
+					<int key="connectionID">51</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -413,6 +424,7 @@
 					<string>15.IBPluginDependency</string>
 					<string>21.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
+					<string>22.IBViewBoundsToFrameTransform</string>
 					<string>34.IBPluginDependency</string>
 					<string>45.IBPluginDependency</string>
 					<string>47.IBPluginDependency</string>
@@ -430,11 +442,14 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw3MAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAADBoAAAw2oAAA</bytes>
+						<bytes key="NSTransformStruct">AUGgAABB6AAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -454,7 +469,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">50</int>
+			<int key="maxID">51</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -520,12 +535,14 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>resultTable</string>
+							<string>searchTypeLabel</string>
 							<string>searchTypePicker</string>
 							<string>textField</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UITableView</string>
+							<string>UILabel</string>
 							<string>UIPickerView</string>
 							<string>UITextField</string>
 						</object>
@@ -535,6 +552,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>resultTable</string>
+							<string>searchTypeLabel</string>
 							<string>searchTypePicker</string>
 							<string>textField</string>
 						</object>
@@ -543,6 +561,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">resultTable</string>
 								<string key="candidateClassName">UITableView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">searchTypeLabel</string>
+								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">searchTypePicker</string>

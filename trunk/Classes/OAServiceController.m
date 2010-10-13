@@ -64,32 +64,39 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)theConnection {
 	if (theConnection == connection) {
 		jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+		NSLog(@"Returned String: %@", jsonString);
 		
 		NSArray *results = [jsonString yajl_JSON];
 		
 		// TODO: create an array of representative objects by getting the
 		//       relevant values out of the array of dictionaries.
+		NSLog(@"Count %i", [results count]);
+		
 		NSMutableArray *representatives = [[NSMutableArray alloc] initWithCapacity:results.count];
 		
 		for (NSDictionary *representativeDict in results) {
-
-			RepObject *representative = [[RepObject alloc] init];
-			if([representativeDict objectForKey:@"name"] != NULL){
-				[representative setFullName:[representativeDict valueForKey:@"name"]];
+			BOOL resType = [representativeDict isKindOfClass:[NSString class]];
+			if(resType == YES){
+				NSLog(@"error check");
 			} else {
-				[representative setFirstName:[representativeDict valueForKey:@"first_name"]];
-				[representative setLastName:[representativeDict valueForKey:@"last_name"]];
-				[representative setFullName:[representativeDict valueForKey:@"full_name"]];
-			}
-			[representative setPartyName:[representativeDict valueForKey:@"party"]];
-			[representative setConstituency:[representativeDict valueForKey:@"constituency"]];	
-			[representative setPersonIdentifier:[representativeDict valueForKey:@"person_id"]];
-			[representative setHouseIdentifier:@"1"];
-			[representatives addObject:representative];
-			[representative release];
-			
-			for (NSString *key in [representativeDict allKeys]) {
-				NSLog(@"%@: %@", key, [representativeDict valueForKey:key]);
+				RepObject *representative = [[RepObject alloc] init];
+				if([representativeDict objectForKey:@"name"] != NULL){
+					[representative setFullName:[representativeDict valueForKey:@"name"]];
+				} else {
+					[representative setFirstName:[representativeDict valueForKey:@"first_name"]];
+					[representative setLastName:[representativeDict valueForKey:@"last_name"]];
+					[representative setFullName:[representativeDict valueForKey:@"full_name"]];
+				}
+				[representative setPartyName:[representativeDict valueForKey:@"party"]];
+				[representative setConstituency:[representativeDict valueForKey:@"constituency"]];	
+				[representative setPersonIdentifier:[representativeDict valueForKey:@"person_id"]];
+				[representative setHouseIdentifier:@"1"];
+				[representatives addObject:representative];
+				[representative release];
+				
+				for (NSString *key in [representativeDict allKeys]) {
+					NSLog(@"%@:", key);
+				}
 			}
 		}
 		

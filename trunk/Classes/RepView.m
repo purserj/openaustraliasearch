@@ -43,6 +43,9 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	//[rep setPartyName:@"Hello"];
+	CLLocationCoordinate2D location;
+	double *width;
+	double *breadth;
 	nameLabel.text = (@"%@", rep.fullName);
 	division.text = (@"%@", rep.constituency);
 	party.text = (@"%@", rep.partyName);
@@ -53,6 +56,40 @@
 	} else 
 	{
 		house.text = @"Senate";
+		if([rep.constituency isEqualToString:@"NSW"]){
+			location.latitude = -32.24643;
+			location.longitude = 148.59511;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 1000000,1000000);
+		} else if([rep.constituency isEqualToString:@"Vic"]){
+			location.latitude = -36.742778;
+			location.longitude = 144.326111;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 500000,500000);
+		} else if([rep.constituency isEqualToString:@"Tas"]){
+			location.latitude = -42.20817645934741;
+			location.longitude = 146.7938232421875;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 250000,250000);
+		} else if([rep.constituency isEqualToString:@"SA"]){
+			location.latitude = -31.597253;
+			location.longitude = 135.791016;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 750000,750000);
+		} else if([rep.constituency isEqualToString:@"WA"]){
+			location.latitude = -25.328056;
+			location.longitude = 122.298333;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 1500000,1500000);
+		} else if([rep.constituency isEqualToString:@"Queensland"]){
+			location.latitude = -22.320278;
+			location.longitude = 144.431667;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 1000000,1500000);
+		} else if([rep.constituency isEqualToString:@"ACT"]){
+			location.latitude = -35.49;
+			location.longitude = 149.001389;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 100000,100000);
+		} else if([rep.constituency isEqualToString:@"NT"]){
+			location.latitude = -19.383333;
+			location.longitude = 133.357778;
+			map.region = MKCoordinateRegionMakeWithDistance(location, 1000000,1000000);
+		}
+		 
 	}
 	[self downloadImage];
 	NSLog(@"%@", rep.houseIdentifier);

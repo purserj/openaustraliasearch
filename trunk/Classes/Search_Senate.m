@@ -122,11 +122,20 @@
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 	
 	NSLog(@"Selected Color: %@. Index of selected color: %i", [states objectAtIndex:row], row);
-	[statePicker setHidden:YES];
-	stateLabel.text=(@"Senators for %@", [states objectAtIndex:row]);
 	SenateServiceController *controller = [[SenateServiceController alloc] init];
 	[controller setDelegate:self];
-	[controller searchForSenatorsByState:[states objectAtIndex:row]];
+	[statePicker setHidden:YES];
+	NSString *stateSel;
+	if([[states objectAtIndex:row] isEqualToString:@"QLD"]){
+		stateLabel.text = @"Senators for QLD";
+		stateSel = @"Queensland";
+	} else {
+		stateLabel.text=[NSString stringWithFormat: @"Senators for %@", [states objectAtIndex:row]];
+		stateSel = [states objectAtIndex:row];
+	}
+	
+	
+	[controller searchForSenatorsByState:stateSel];
 	
 	
 }
