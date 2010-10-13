@@ -16,8 +16,9 @@
 		1906275D1223695000CAD9D0 /* Search_Hansard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1906275B1223695000CAD9D0 /* Search_Hansard.m */; };
 		1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1906275C1223695000CAD9D0 /* Search_Hansard.xib */; };
 		190627611223697200CAD9D0 /* RepObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 190627601223697200CAD9D0 /* RepObject.m */; };
+		19308F04125DE61A00549559 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 19308F03125DE61A00549559 /* icon.png */; };
+		19308F24125DEFDE00549559 /* oa.png in Resources */ = {isa = PBXBuildFile; fileRef = 19308F23125DEFDE00549559 /* oa.png */; };
 		193CD85D125BDF5A002484D1 /* HansardObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 193CD85C125BDF5A002484D1 /* HansardObject.m */; };
-		193CD9C9125C3417002484D1 /* oa.png in Resources */ = {isa = PBXBuildFile; fileRef = 193CD9C8125C3417002484D1 /* oa.png */; };
 		19543478125198F900C89862 /* SenateServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19543477125198F900C89862 /* SenateServiceController.m */; };
 		195C7DC6122CB4A200194292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C7DC5122CB4A200194292 /* MapKit.framework */; };
 		19629F69122DE01A005E45E2 /* HansardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19629F67122DE01A005E45E2 /* HansardView.m */; };
@@ -27,6 +28,7 @@
 		197095BE1252BCE700EA055B /* openaustralia.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */; };
 		197095C31252D2CF00EA055B /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197095C11252D2CF00EA055B /* WebView.m */; };
 		197095C41252D2CF00EA055B /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197095C21252D2CF00EA055B /* WebView.xib */; };
+		19F72DCC1262B4A400893A1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 19F72DCB1262B4A400893A1F /* Default.png */; };
 		1D3623260D0F684500981E51 /* openaustraliasearchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -54,9 +56,10 @@
 		1906275C1223695000CAD9D0 /* Search_Hansard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Search_Hansard.xib; path = Classes/Search_Hansard.xib; sourceTree = "<group>"; };
 		1906275F1223697200CAD9D0 /* RepObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepObject.h; sourceTree = "<group>"; };
 		190627601223697200CAD9D0 /* RepObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepObject.m; sourceTree = "<group>"; };
+		19308F03125DE61A00549559 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		19308F23125DEFDE00549559 /* oa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oa.png; sourceTree = "<group>"; };
 		193CD85B125BDF5A002484D1 /* HansardObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardObject.h; sourceTree = "<group>"; };
 		193CD85C125BDF5A002484D1 /* HansardObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardObject.m; sourceTree = "<group>"; };
-		193CD9C8125C3417002484D1 /* oa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oa.png; sourceTree = "<group>"; };
 		19543476125198F900C89862 /* SenateServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenateServiceController.h; sourceTree = "<group>"; };
 		19543477125198F900C89862 /* SenateServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenateServiceController.m; sourceTree = "<group>"; };
 		195C7DC5122CB4A200194292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -65,11 +68,13 @@
 		19629F68122DE01A005E45E2 /* HansardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HansardView.xib; path = Classes/HansardView.xib; sourceTree = "<group>"; };
 		19629F7F122DE3F3005E45E2 /* HansardServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HansardServiceController.h; sourceTree = "<group>"; };
 		19629F80122DE3F3005E45E2 /* HansardServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HansardServiceController.m; sourceTree = "<group>"; };
+		196F30FE126407BD0041CB76 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		1970957D1252B8B000EA055B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = openaustralia.xcdatamodel; sourceTree = "<group>"; };
 		197095C01252D2CF00EA055B /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
 		197095C11252D2CF00EA055B /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
 		197095C21252D2CF00EA055B /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WebView.xib; path = Classes/WebView.xib; sourceTree = "<group>"; };
+		19F72DCB1262B4A400893A1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* openaustraliasearchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openaustraliasearchAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* openaustraliasearchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openaustraliasearchAppDelegate.m; sourceTree = "<group>"; };
@@ -138,7 +143,6 @@
 				197095C11252D2CF00EA055B /* WebView.m */,
 				193CD85B125BDF5A002484D1 /* HansardObject.h */,
 				193CD85C125BDF5A002484D1 /* HansardObject.m */,
-				193CD9C8125C3417002484D1 /* oa.png */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,6 +195,7 @@
 				195C7DC5122CB4A200194292 /* MapKit.framework */,
 				1970957D1252B8B000EA055B /* CoreData.framework */,
 				197095BD1252BCE700EA055B /* openaustralia.xcdatamodel */,
+				196F30FE126407BD0041CB76 /* Entitlements.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -207,6 +212,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19308F23125DEFDE00549559 /* oa.png */,
+				19F72DCB1262B4A400893A1F /* Default.png */,
+				19308F03125DE61A00549559 /* icon.png */,
 				1906275C1223695000CAD9D0 /* Search_Hansard.xib */,
 				190627571223693D00CAD9D0 /* Search_Senate.xib */,
 				197095C21252D2CF00EA055B /* WebView.xib */,
@@ -290,7 +298,9 @@
 				1906275E1223695000CAD9D0 /* Search_Hansard.xib in Resources */,
 				19629F6A122DE01A005E45E2 /* HansardView.xib in Resources */,
 				197095C41252D2CF00EA055B /* WebView.xib in Resources */,
-				193CD9C9125C3417002484D1 /* oa.png in Resources */,
+				19308F04125DE61A00549559 /* icon.png in Resources */,
+				19308F24125DEFDE00549559 /* oa.png in Resources */,
+				19F72DCC1262B4A400893A1F /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +332,49 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		196F30FC126406610041CB76 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Distribution;
+		};
+		196F30FD126406610041CB76 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/openaustraliasearch/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: James Purser";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Purser";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = openaustraliasearch_Prefix.pch;
+				INFOPLIST_FILE = "openaustraliasearch-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = openaustraliasearch;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/openaustraliasearch/Entitlements.plist";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -348,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/openaustraliasearch/Entitlements.plist";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = openaustraliasearch_Prefix.pch;
@@ -400,18 +450,20 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				196F30FD126406610041CB76 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Distribution;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "openaustraliasearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				196F30FC126406610041CB76 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Distribution;
 		};
 /* End XCConfigurationList section */
 	};

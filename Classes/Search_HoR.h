@@ -25,6 +25,7 @@
 	IBOutlet UITextField *textField; 
 	IBOutlet UITableView *resultTable;
 	IBOutlet UIPickerView *searchTypePicker;
+	IBOutlet UILabel *searchTypeLabel;
 	NSArray *stypes;
 	NSMutableArray *results;
 	NSMutableArray *reps;
@@ -42,6 +43,7 @@
 
 @property (nonatomic, retain) IBOutlet UITextField *textField;
 @property (nonatomic, retain) IBOutlet UITableView *resultTable;
+@property (nonatomic, retain) IBOutlet UILabel *searchTypeLabel;
 @property (nonatomic, retain) NSArray *results;
 @property (nonatomic, retain) UIPickerView *searchTypePicker;
 @property (nonatomic, retain) NSArray *stypes;

@@ -31,6 +31,7 @@
 @synthesize searchTypePicker;
 @synthesize stypes;
 @synthesize stype;
+@synthesize searchTypeLabel;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -46,6 +47,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	stypes = [[NSArray arrayWithObjects:
+			   @"Select Search Type",
 			   @"PostCode",
 			   @"Date",
 			   @"Party",
@@ -84,19 +86,26 @@
 {
 	
 	OAServiceController *controller = [[OAServiceController alloc] init];
+	[searchTypePicker setHidden:YES];
+	[textField resignFirstResponder];
 	[controller setDelegate:self];
 	if([stype isEqualToString:@"PostCode"]){
+		
 		NSInteger postcode = [textField.text intValue];
 		[controller searchForRepresentativesWithPostcode:postcode date:nil party:nil search:nil];
+		
 	} else if([stype isEqualToString:@"Date"]){
 		NSString *dateStr = [textField text];
 		[controller searchForRepresentativesWithPostcode:nil date:dateStr party:nil search:nil];
+		searchTypeLabel.text = @"Search by Date";
 	} else if([stype isEqualToString:@"Party"]){
 		NSString *partyStr = [textField text];
 		[controller searchForRepresentativesWithPostcode:nil date:nil party:partyStr search:nil];
+		searchTypeLabel.text = @"Search by Party";
 	} else if([stype isEqualToString:@"Name"]){
 		NSString *nameStr = [textField text];
 		[controller searchForRepresentativesWithPostcode:nil date:nil party:nil search:nameStr];
+		searchTypeLabel.text = @"Search by Name";
 	}
 	NSLog(@"%@", results);
 	NSLog(@"get results button pushed - %d", [results count]);
@@ -121,17 +130,22 @@
 	
 	results = [NSMutableArray new];
 	reps = [NSMutableArray new];
-	for (RepObject *representative in representatives) {
-		NSLog(@"%@, representative for %@", representative.fullName, representative.constituency);
-		NSString *res = [NSString stringWithFormat:@"%@ - %@", representative.fullName, representative.constituency];
-		NSLog(@"String - %@",res);
-		[results addObject:res];
-	}
-	NSLog(@"Results Count - %d", [results count]);
-	reps = representatives;
-	[reps retain];
-	[results retain];
+	if(representatives == NULL){
+		
+	} else {
+		for (RepObject *representative in representatives) {
+			NSLog(@"%@, representative for %@", representative.fullName, representative.constituency);
+			NSString *res = [NSString stringWithFormat:@"%@ - %@", representative.fullName, representative.constituency];
+			NSLog(@"String - %@",res);
+			[results addObject:res];
+		}
+		NSLog(@"Results Count - %d", [results count]);
+		reps = representatives;
+		[reps retain];
+		[results retain];
 		[[self resultTable] reloadData];
+	}
+	
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -156,10 +170,23 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+	cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0];
     cell.text = [results objectAtIndex:indexPath.row]; 
     // Configure the cell...
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *cellText = [results objectAtIndex:indexPath.row];
+    UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:17.0];
+    CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
+    CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+	
+    return labelSize.height + 20;
 }
 
 #pragma mark -
@@ -179,6 +206,7 @@
 }
 
 -(IBAction)selectSearchType:(id)sender{
+	[textField resignFirstResponder];
 	[searchTypePicker setHidden:NO];
 	NSLog(@"Change State Button is pressed");
 }
@@ -202,8 +230,19 @@
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 	
 	NSLog(@"Selected Color: %@. Index of selected color: %i", [stypes objectAtIndex:row], row);
+	
 	stype = [stypes objectAtIndex:row];
-	[searchTypePicker setHidden:YES];
+	if([stype isEqualToString:@"PostCode"]){
+		searchTypeLabel.text = @"Search by Post Code";
+	} else if([stype isEqualToString:@"Date"]){
+		searchTypeLabel.text = @"Search by Date";
+	} else if([stype isEqualToString:@"Party"]){
+		searchTypeLabel.text = @"Search by Party";
+	} else if([stype isEqualToString:@"Name"]){
+		searchTypeLabel.text = @"Search by Name";
+	}
+	
+	//[searchTypePicker setHidden:YES];
 }
 
 - (void)dealloc {
