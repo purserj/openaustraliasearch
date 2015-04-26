@@ -1,0 +1,1 @@
+This app is aimed at the iOS market and is meant to replicate the functionality of the Android based Open Australia Search Droid.
